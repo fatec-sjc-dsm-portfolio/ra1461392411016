@@ -6,7 +6,6 @@ const es: UIStrings = {
     home: 'Inicio',
     about: 'Sobre mí',
     stack: 'Stack',
-    services: 'Servicios',
     projects: 'Proyectos',
     trajectory: 'Trayectoria',
     contact: 'Contacto',
@@ -72,11 +71,6 @@ const es: UIStrings = {
     footerUpdated: '↻ ACTUALIZADO HOY',
     docs: 'Documentación',
   },
-  services: {
-    eyebrow: 'SERVICIOS',
-    title: 'Lo que puedo',
-    titleAccent: 'construir',
-  },
   footer: {
     tagline: 'FULL STACK DEVELOPER · DESDE 2022',
     signature: 'por João Pedro Carvalho dos Santos',
@@ -102,7 +96,7 @@ const es: UIStrings = {
     counter: '{{current}} / {{total}}',
     prev: 'Anterior',
     next: 'Siguiente',
-    detailAbout: 'SOBRE',
+    detailAbout: 'PROBLEMA',
     detailFeatures: 'FUNCIONALIDADES',
     detailTech: 'TECNOLOGÍAS',
     detailContributions: 'CONTRIBUCIONES',

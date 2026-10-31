@@ -4,7 +4,6 @@ const pt = {
     home: 'Início',
     about: 'Sobre',
     stack: 'Stack',
-    services: 'Serviços',
     projects: 'Projetos',
     trajectory: 'Trajetória',
     contact: 'Contato',
@@ -70,11 +69,6 @@ const pt = {
     footerUpdated: '↻ ATUALIZADO HOJE',
     docs: 'Documentação',
   },
-  services: {
-    eyebrow: 'SERVIÇOS',
-    title: 'O que posso',
-    titleAccent: 'construir',
-  },
   footer: {
     tagline: 'FULL STACK DEVELOPER · DESDE 2022',
     signature: 'de João Pedro Carvalho dos Santos',
@@ -100,7 +94,7 @@ const pt = {
     counter: '{{current}} / {{total}}',
     prev: 'Anterior',
     next: 'Próximo',
-    detailAbout: 'SOBRE',
+    detailAbout: 'PROBLEMA',
     detailFeatures: 'FUNCIONALIDADES',
     detailTech: 'TECNOLOGIAS',
     detailContributions: 'CONTRIBUIÇÕES',

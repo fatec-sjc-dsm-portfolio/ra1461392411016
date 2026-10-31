@@ -61,9 +61,9 @@ export const PROJECTS: Project[] = [
     links: { code: 'https://github.com/CtrI-Alt-Del/smart-farming' },
     detail: {
       about: {
-        pt: 'Aplicação web para monitoramento da **estufa inteligente** mantida pela Fatec de São José dos Campos. Coleta e visualiza dados de sensores (temperatura, umidade, pH), executa checklists de manutenção e gera relatórios, com transferência automática de dados via placa **ESP32**.',
-        en: 'Web app for monitoring the **smart greenhouse** maintained by Fatec São José dos Campos. Collects and visualizes sensor data (temperature, humidity, pH), runs maintenance checklists and generates reports, with automatic data transfer through an **ESP32** board.',
-        es: 'Aplicación web para monitoreo del **invernadero inteligente** mantenido por la Fatec São José dos Campos. Recolecta y visualiza datos de sensores (temperatura, humedad, pH), ejecuta checklists de mantenimiento y genera reportes, con transferencia automática de datos vía placa **ESP32**.',
+        pt: 'A **estufa inteligente** da Fatec de São José dos Campos gerava leituras de sensores (temperatura, umidade, pH), mas não havia um lugar único para acompanhá-las: os dados ficavam dispersos, as manutenções dependiam de controle manual e não existiam relatórios para apoiar decisões. O Smart Farming centraliza essas leituras, enviadas automaticamente por uma placa **ESP32**, em dashboards, checklists de manutenção e relatórios.',
+        en: 'The **smart greenhouse** at Fatec São José dos Campos produced sensor readings (temperature, humidity, pH), but there was no single place to follow them: data was scattered, maintenance relied on manual control and there were no reports to support decisions. Smart Farming brings those readings together, sent automatically by an **ESP32** board, into dashboards, maintenance checklists and reports.',
+        es: 'El **invernadero inteligente** de la Fatec São José dos Campos generaba lecturas de sensores (temperatura, humedad, pH), pero no había un lugar único para seguirlas: los datos estaban dispersos, el mantenimiento dependía de control manual y no existían reportes para apoyar decisiones. Smart Farming centraliza esas lecturas, enviadas automáticamente por una placa **ESP32**, en dashboards, checklists de mantenimiento y reportes.',
       },
       features: [
         {
@@ -225,9 +225,9 @@ export const PROJECTS: Project[] = [
     links: { code: 'https://github.com/CtrI-Alt-Del/stocker' },
     detail: {
       about: {
-        pt: 'Aplicação web moderna para **gerenciamento de estoque**, com controle de produtos e lotes em tempo real, permissões granulares por usuário, relatório de analytics gerado com IA e chatbot assistente para os funcionários da empresa.',
-        en: 'Modern web app for **inventory management**, with real-time product and batch control, granular per-user permissions, AI-generated analytics reports and an in-app assistant chatbot for employees.',
-        es: 'Aplicación web moderna para **gestión de inventario**, con control de productos y lotes en tiempo real, permisos granulares por usuario, informes de analítica generados con IA y chatbot asistente para los empleados de la empresa.',
+        pt: 'Empresas que controlam o **estoque** em planilhas ou anotações perdem a visão do que realmente têm: produtos acabam sem aviso, lotes vencem na prateleira e qualquer funcionário pode alterar dados que não deveria. O Stocker resolve isso com controle de produtos e lotes em tempo real, alertas de estoque baixo e de validade, permissões por usuário, relatórios gerados com IA e um chatbot que tira dúvidas da equipe.',
+        en: 'Companies that track **inventory** in spreadsheets or notes lose sight of what they actually have: products run out without warning, batches expire on the shelf and any employee can change data they should not touch. Stocker solves this with real-time product and batch control, low-stock and expiration alerts, per-user permissions, AI-generated reports and a chatbot that answers the team’s questions.',
+        es: 'Las empresas que controlan el **inventario** en hojas de cálculo o anotaciones pierden la visión de lo que realmente tienen: los productos se agotan sin aviso, los lotes vencen en la estantería y cualquier empleado puede modificar datos que no debería. Stocker lo resuelve con control de productos y lotes en tiempo real, alertas de stock bajo y de vencimiento, permisos por usuario, reportes generados con IA y un chatbot que responde las dudas del equipo.',
       },
       features: [
         {
@@ -398,9 +398,9 @@ export const PROJECTS: Project[] = [
     links: { code: 'https://github.com/CtrI-Alt-Del/chronos' },
     detail: {
       about: {
-        pt: 'Aplicação web moderna para **gerenciamento de ponto online**, com registro eletrônico da jornada, cálculo automático de horas extras e faltas, gestão de ausências com fluxos de aprovação e conformidade com a legislação trabalhista.',
-        en: 'Modern web app for **online time-clock management**, with electronic workday tracking, automatic overtime and absence calculation, absence management with approval flows and compliance with labor law.',
-        es: 'Aplicación web moderna para **gestión de fichaje online**, con registro electrónico de la jornada, cálculo automático de horas extras y faltas, gestión de ausencias con flujos de aprobación y cumplimiento de la legislación laboral.',
+        pt: 'Controlar o **ponto** dos funcionários manualmente ou em sistemas desconectados gera erros no cálculo de horas extras e faltas, pedidos de ausência que se perdem sem aprovação e risco de descumprir a legislação trabalhista. O Chronos registra a jornada eletronicamente, calcula horas extras e faltas de forma automática e organiza as ausências em fluxos de aprovação, mantendo a empresa em conformidade.',
+        en: 'Tracking employee **time and attendance** by hand or in disconnected systems leads to wrong overtime and absence calculations, leave requests that get lost without approval and the risk of breaking labor law. Chronos records the workday electronically, calculates overtime and absences automatically and organizes leave into approval flows, keeping the company compliant.',
+        es: 'Controlar el **fichaje** de los empleados manualmente o en sistemas desconectados genera errores en el cálculo de horas extras y faltas, solicitudes de ausencia que se pierden sin aprobación y riesgo de incumplir la legislación laboral. Chronos registra la jornada electrónicamente, calcula horas extras y faltas de forma automática y organiza las ausencias en flujos de aprobación, manteniendo a la empresa en cumplimiento.',
       },
       features: [
         {
@@ -555,9 +555,9 @@ export const PROJECTS: Project[] = [
     techs: ['nestjs', 'react', 'astro', 'postgresql', 'mongodb', 'terraform', 'aws'],
     detail: {
       about: {
-        pt: 'Aplicação web para **monitoramento de estações meteorológicas de baixo custo** desenvolvida em parceria com a Tecsus. Coleta e processa dados de sensores físicos via **protocolo MQTT** e disponibiliza dashboards em tempo real, alarmes configuráveis e um **portal educacional** com modelos 3D dos dispositivos.',
-        en: 'Web app for **monitoring low-cost weather stations** built in partnership with Tecsus. Collects and processes physical-sensor data via the **MQTT protocol** and delivers real-time dashboards, configurable alarms and an **educational portal** with 3D device models.',
-        es: 'Aplicación web para **monitoreo de estaciones meteorológicas de bajo costo** desarrollada en alianza con Tecsus. Recolecta y procesa datos de sensores físicos vía **protocolo MQTT** y ofrece dashboards en tiempo real, alarmas configurables y un **portal educativo** con modelos 3D de los dispositivos.',
+        pt: 'Estações meteorológicas de **baixo custo** produzem dados valiosos, mas sem uma plataforma para recebê-los as leituras ficam difíceis de acompanhar, falhas nos sensores passam despercebidas e quem não é da área não entende como os dispositivos funcionam. Em parceria com a Tecsus, o Gaia recebe os dados via **protocolo MQTT**, mostra tudo em dashboards em tempo real, dispara alarmes configuráveis e oferece um **portal educacional** com modelos 3D dos dispositivos.',
+        en: '**Low-cost** weather stations produce valuable data, but without a platform to receive it the readings are hard to follow, sensor failures go unnoticed and people outside the field do not understand how the devices work. In partnership with Tecsus, Gaia receives the data via the **MQTT protocol**, shows it in real-time dashboards, fires configurable alarms and offers an **educational portal** with 3D device models.',
+        es: 'Las estaciones meteorológicas de **bajo costo** producen datos valiosos, pero sin una plataforma para recibirlos las lecturas son difíciles de seguir, las fallas de los sensores pasan desapercibidas y quien no es del área no entiende cómo funcionan los dispositivos. En alianza con Tecsus, Gaia recibe los datos vía **protocolo MQTT**, los muestra en dashboards en tiempo real, dispara alarmas configurables y ofrece un **portal educativo** con modelos 3D de los dispositivos.',
       },
       features: [
         {
@@ -734,9 +734,9 @@ export const PROJECTS: Project[] = [
     links: { code: 'https://github.com/CtrI-Alt-Del/animus' },
     detail: {
       about: {
-        pt: 'Aplicação **mobile em Flutter** integrada à nuvem, desenvolvida com a Xertica, que automatiza a **pesquisa e análise de precedentes jurídicos** por meio de IA generativa e busca semântica vetorial. Atende juízes de 1ª e 2ª instância na fundamentação de decisões e advogados na avaliação da viabilidade de teses.',
-        en: 'Cloud-integrated **mobile app in Flutter**, built with Xertica, that automates **legal-precedent search and analysis** through generative AI and vector semantic search. Supports first- and second-instance judges in grounding decisions and lawyers in assessing the viability of their theses.',
-        es: 'Aplicación **móvil en Flutter** integrada a la nube, desarrollada con Xertica, que automatiza la **búsqueda y análisis de precedentes jurídicos** mediante IA generativa y búsqueda semántica vectorial. Atiende a jueces de 1.ª y 2.ª instancia en la fundamentación de decisiones y a abogados en la evaluación de la viabilidad de sus tesis.',
+        pt: 'Encontrar **precedentes jurídicos** relevantes exige horas de pesquisa manual em grandes acervos de decisões, o que atrasa juízes de 1ª e 2ª instância na fundamentação e dificulta que advogados avaliem se uma tese é viável. Em parceria com a Xertica, o Animus é um app **mobile em Flutter** que automatiza essa pesquisa com IA generativa e busca semântica vetorial, trazendo os precedentes mais aplicáveis a cada caso.',
+        en: 'Finding relevant **legal precedents** takes hours of manual research through large collections of rulings, which slows first- and second-instance judges in grounding their decisions and makes it hard for lawyers to judge whether a thesis is viable. In partnership with Xertica, Animus is a **Flutter mobile app** that automates this research with generative AI and vector semantic search, surfacing the most applicable precedents for each case.',
+        es: 'Encontrar **precedentes jurídicos** relevantes exige horas de investigación manual en grandes acervos de decisiones, lo que retrasa a jueces de 1.ª y 2.ª instancia en la fundamentación y dificulta que los abogados evalúen si una tesis es viable. En alianza con Xertica, Animus es una app **móvil en Flutter** que automatiza esa investigación con IA generativa y búsqueda semántica vectorial, trayendo los precedentes más aplicables a cada caso.',
       },
       features: [
         {
@@ -928,9 +928,9 @@ export const PROJECTS: Project[] = [
     },
     detail: {
       about: {
-        pt: 'Plataforma educativa **gamificada** desenvolvida como TCC da ETEC para o ensino de **lógica de programação** a iniciantes. Utiliza uma **metáfora espacial** — planetas (temas) e estrelas (fases) — combinada com XP, StarCoins, ofensiva diária e conquistas para engajar os estudantes em uma jornada estruturada.',
-        en: '**Gamified** educational platform built as my ETEC thesis for teaching **programming logic** to beginners. It uses a **space metaphor** — planets (topics) and stars (levels) — combined with XP, StarCoins, daily streaks and achievements to engage students in a structured journey.',
-        es: 'Plataforma educativa **gamificada** desarrollada como TCC de la ETEC para la enseñanza de **lógica de programación** a principiantes. Utiliza una **metáfora espacial** — planetas (temas) y estrellas (niveles) — combinada con XP, StarCoins, racha diaria y logros para enganchar a los estudiantes en un recorrido estructurado.',
+        pt: 'Quem começa a aprender **lógica de programação** costuma desistir cedo: o conteúdo parece abstrato, falta uma sequência clara de estudo e não há motivação para praticar todo dia. Como TCC da ETEC, o StarDust transforma o aprendizado em uma jornada **gamificada** com uma metáfora espacial — planetas (temas) e estrelas (fases) — e usa XP, StarCoins, ofensiva diária e conquistas para manter o estudante engajado.',
+        en: 'Beginners learning **programming logic** often give up early: the content feels abstract, there is no clear study path and nothing keeps them practicing every day. Built as my ETEC thesis, StarDust turns learning into a **gamified** journey with a space metaphor — planets (topics) and stars (levels) — and uses XP, StarCoins, daily streaks and achievements to keep students engaged.',
+        es: 'Quien empieza a aprender **lógica de programación** suele abandonar pronto: el contenido parece abstracto, falta una secuencia clara de estudio y no hay motivación para practicar cada día. Como TCC de la ETEC, StarDust convierte el aprendizaje en un recorrido **gamificado** con una metáfora espacial — planetas (temas) y estrellas (niveles) — y usa XP, StarCoins, racha diaria y logros para mantener al estudiante motivado.',
       },
       features: [
         {
@@ -1128,9 +1128,9 @@ export const PROJECTS: Project[] = [
     },
     detail: {
       about: {
-        pt: 'Blog de notícias **freelance** desenvolvido para a empresa Pulo do Gato News, com acervo sobre educação, tecnologia, esporte e cultura pop da região de São Paulo. Site **estático de alta performance** com **Astro**, servido via **CDN** e otimizado para **SEO técnico**, com conteúdo administrado por CMS headless.',
-        en: 'Freelance news blog built for the Pulo do Gato News company, covering education, technology, sports and pop culture in the São Paulo region. **High-performance static site** built with **Astro**, delivered through a **CDN** and optimized for **technical SEO**, with content managed via a headless CMS.',
-        es: 'Blog de noticias **freelance** desarrollado para la empresa Pulo do Gato News, con acervo sobre educación, tecnología, deporte y cultura pop de la región de São Paulo. Sitio **estático de alto rendimiento** con **Astro**, servido vía **CDN** y optimizado para **SEO técnico**, con contenido administrado por CMS headless.',
+        pt: 'A Pulo do Gato News precisava publicar notícias sobre educação, tecnologia, esporte e cultura pop da região de São Paulo e ser encontrada no Google, mas sites de notícias lentos perdem leitores e posições nas buscas. Como freelancer, construí um site **estático de alta performance** com **Astro**, servido via **CDN**, otimizado para **SEO técnico** e com conteúdo administrado por um CMS headless, para a equipe publicar sem depender de um desenvolvedor.',
+        en: 'Pulo do Gato News needed to publish news about education, technology, sports and pop culture in the São Paulo region and be found on Google, but slow news sites lose readers and search rankings. As a freelancer, I built a **high-performance static site** with **Astro**, delivered through a **CDN**, optimized for **technical SEO** and with content managed in a headless CMS, so the team can publish without depending on a developer.',
+        es: 'Pulo do Gato News necesitaba publicar noticias sobre educación, tecnología, deporte y cultura pop de la región de São Paulo y ser encontrada en Google, pero los sitios de noticias lentos pierden lectores y posiciones en las búsquedas. Como freelancer, construí un sitio **estático de alto rendimiento** con **Astro**, servido vía **CDN**, optimizado para **SEO técnico** y con contenido administrado por un CMS headless, para que el equipo publique sin depender de un desarrollador.',
       },
       features: [
         {
@@ -1309,9 +1309,9 @@ export const PROJECTS: Project[] = [
     },
     detail: {
       about: {
-        pt: 'Aplicativo de **e-commerce nativo** desenvolvido em **Flutter** para a marca Sertton, publicado na Play Store. Foco em alta performance, fluidez de navegação e integração robusta com a plataforma **Yampi** para gestão de produtos, pedidos e pagamentos.',
-        en: 'Native **e-commerce app** built in **Flutter** for the Sertton brand, published on the Play Store. Focus on high performance, smooth navigation and robust integration with the **Yampi** platform for products, orders and payments.',
-        es: 'Aplicación de **e-commerce nativa** desarrollada en **Flutter** para la marca Sertton, publicada en Play Store. Enfoque en alto rendimiento, fluidez de navegación e integración robusta con la plataforma **Yampi** para gestión de productos, pedidos y pagos.',
+        pt: 'A marca Sertton vendia pela plataforma **Yampi**, mas não tinha um app próprio: no celular, os clientes dependiam do navegador, com uma experiência de compra mais lenta e menos fluida. Desenvolvi em **Flutter** um app de **e-commerce nativo**, publicado na Play Store e integrado à Yampi para produtos, pedidos e pagamentos, com foco em performance e navegação fluida.',
+        en: 'The Sertton brand sold through the **Yampi** platform but had no app of its own: on mobile, customers depended on the browser, with a slower and less fluid shopping experience. I built a **native e-commerce app** in **Flutter**, published on the Play Store and integrated with Yampi for products, orders and payments, focused on performance and smooth navigation.',
+        es: 'La marca Sertton vendía por la plataforma **Yampi**, pero no tenía una app propia: en el celular, los clientes dependían del navegador, con una experiencia de compra más lenta y menos fluida. Desarrollé en **Flutter** una app de **e-commerce nativa**, publicada en Play Store e integrada a Yampi para productos, pedidos y pagos, con foco en rendimiento y navegación fluida.',
       },
       features: [
         {

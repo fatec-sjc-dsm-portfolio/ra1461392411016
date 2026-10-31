@@ -11,7 +11,6 @@ const NAV = [
   { id: 'home', key: 'nav.home' },
   { id: 'trajectory', key: 'nav.trajectory' },
   { id: 'stack', key: 'nav.stack' },
-  { id: 'services', key: 'nav.services' },
   { id: 'projects', key: 'nav.projects' },
   { id: 'about', key: 'nav.about' },
   { id: 'contact', key: 'nav.contact' },

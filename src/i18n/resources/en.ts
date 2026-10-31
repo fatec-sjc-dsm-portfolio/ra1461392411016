@@ -6,7 +6,6 @@ const en: UIStrings = {
     home: 'Home',
     about: 'About',
     stack: 'Stack',
-    services: 'Services',
     projects: 'Projects',
     trajectory: 'Trajectory',
     contact: 'Contact',
@@ -72,11 +71,6 @@ const en: UIStrings = {
     footerUpdated: '↻ UPDATED TODAY',
     docs: 'Documentation',
   },
-  services: {
-    eyebrow: 'SERVICES',
-    title: 'What I can',
-    titleAccent: 'build',
-  },
   footer: {
     tagline: 'FULL STACK DEVELOPER · SINCE 2022',
     signature: 'by João Pedro Carvalho dos Santos',
@@ -102,7 +96,7 @@ const en: UIStrings = {
     counter: '{{current}} / {{total}}',
     prev: 'Previous',
     next: 'Next',
-    detailAbout: 'ABOUT',
+    detailAbout: 'PROBLEM',
     detailFeatures: 'FEATURES',
     detailTech: 'TECHNOLOGIES',
     detailContributions: 'CONTRIBUTIONS',

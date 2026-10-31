@@ -8,7 +8,6 @@ import { Footer } from '@/components/sections/Footer'
 import { Header } from '@/components/sections/Header'
 import { Hero } from '@/components/sections/Hero'
 import { Projects } from '@/components/sections/Projects'
-import { Services } from '@/components/sections/Services'
 import { resetSplashSeen, SplashIntro } from '@/components/sections/SplashIntro'
 import { Stack } from '@/components/sections/Stack'
 import { Trajectory } from '@/components/sections/Trajectory'
@@ -48,7 +47,6 @@ function App() {
         <Hero active={heroActive} onSeePanda={replaySplash} />
         <Trajectory />
         <Stack />
-        <Services />
         <Projects />
         <About />
         <Contact />
