@@ -18,7 +18,6 @@ const en: UIStrings = {
     modeLight: 'Light',
     scheme: 'Scheme',
     language: 'Language',
-    hint: '⌘+, to open · ESC to close',
   },
   schemes: {
     bambuzal: 'Bambuzal',

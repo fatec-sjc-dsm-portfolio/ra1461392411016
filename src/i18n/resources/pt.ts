@@ -16,7 +16,6 @@ const pt = {
     modeLight: 'Claro',
     scheme: 'Esquema',
     language: 'Idioma',
-    hint: '⌘+, para abrir · ESC para fechar',
   },
   schemes: {
     bambuzal: 'Bambuzal',
