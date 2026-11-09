@@ -7,7 +7,6 @@ import { useBrtClock } from '@/hooks/useBrtClock'
 import { useTheme } from '@/theme/ThemeProvider'
 import { assetUrl } from '@/lib/assetUrl'
 
-const TECH_LINE = ['TS', 'PYTHON', 'REACT', 'NEXT.JS', 'FLUTTER', 'AWS']
 const DEV_START_YEAR = 2023
 const HERO_TEXT_STYLES = {
   b: <strong className='font-semibold text-text-primary' />,
@@ -150,16 +149,6 @@ export function Hero({
               {t('hero.tagYears', { years: devYears })}
             </Tag>
           </div>
-        </div>
-
-        {/* bottom tech line */}
-        <div className='mt-14 flex flex-wrap items-center gap-x-3 gap-y-2 animate-petros-rise font-mono text-meta tracking-meta uppercase text-text-faint [animation-delay:560ms]'>
-          {TECH_LINE.map((tech, i) => (
-            <span key={tech} className='flex items-center gap-3'>
-              {i > 0 && <span aria-hidden>·</span>}
-              {tech}
-            </span>
-          ))}
         </div>
       </div>
     </section>
