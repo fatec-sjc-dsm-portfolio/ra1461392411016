@@ -33,6 +33,13 @@ export function parseStored(raw: string | null): Partial<ThemeState> {
   return out
 }
 
+// Reads ?lang= from a URL search string. Accepts `pt` as shorthand for pt-BR.
+export function parseLangParam(search: string): Lang | undefined {
+  const value = new URLSearchParams(search).get('lang')?.toLowerCase()
+  if (value === 'pt') return 'pt-BR'
+  return LANGS.find((lang) => lang.toLowerCase() === value)
+}
+
 export function resolveInitial(
   stored: Partial<ThemeState>,
   prefersDark: boolean,

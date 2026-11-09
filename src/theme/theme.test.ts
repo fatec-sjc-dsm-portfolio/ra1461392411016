@@ -1,5 +1,22 @@
 import { describe, expect, it } from 'vitest'
-import { DEFAULTS, parseStored, resolveInitial, serialize } from './theme'
+import { DEFAULTS, parseLangParam, parseStored, resolveInitial, serialize } from './theme'
+
+describe('parseLangParam', () => {
+  it('reads a supported language', () => {
+    expect(parseLangParam('?lang=en')).toBe('en')
+    expect(parseLangParam('?x=1&lang=es')).toBe('es')
+    expect(parseLangParam('?lang=pt-BR')).toBe('pt-BR')
+  })
+  it('accepts pt as shorthand and ignores case', () => {
+    expect(parseLangParam('?lang=pt')).toBe('pt-BR')
+    expect(parseLangParam('?lang=EN')).toBe('en')
+  })
+  it('returns undefined when missing or unsupported', () => {
+    expect(parseLangParam('')).toBeUndefined()
+    expect(parseLangParam('?lang=fr')).toBeUndefined()
+    expect(parseLangParam('?lang=')).toBeUndefined()
+  })
+})
 
 describe('parseStored', () => {
   it('returns empty object for null', () => {

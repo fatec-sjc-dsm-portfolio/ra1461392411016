@@ -5,7 +5,7 @@ import { TanStackDevtools } from '@tanstack/react-devtools'
 import '@/i18n/config'
 import appCss from '../styles.css?url'
 import { THEME_BOOTSTRAP, ThemeProvider } from '@/theme/ThemeProvider'
-import { DEFAULTS, parseStored, resolveInitial } from '@/theme/theme'
+import { DEFAULTS, parseLangParam, parseStored, resolveInitial } from '@/theme/theme'
 
 const SITE_URL = 'https://fatec-sjc-dsm-portfolio.github.io/ra1461392411016'
 
@@ -47,16 +47,20 @@ export const Route = createRootRoute({
   shellComponent: RootDocument,
 })
 
+function resolveClientInitial() {
+  const stored = parseStored(localStorage.getItem('petros-theme'))
+  // The language comes only from the URL; a saved one must not outlive its link.
+  const lang = parseLangParam(window.location.search) ?? DEFAULTS.lang
+  return resolveInitial(
+    { ...stored, lang },
+    window.matchMedia('(prefers-color-scheme: dark)').matches,
+  )
+}
+
 function RootComponent() {
-  // SSR uses DEFAULTS; client reconciles from localStorage before paint via the
-  // bootstrap script + the provider effect.
-  const initial =
-    typeof document === 'undefined'
-      ? DEFAULTS
-      : resolveInitial(
-          parseStored(localStorage.getItem('petros-theme')),
-          window.matchMedia('(prefers-color-scheme: dark)').matches,
-        )
+  // SSR uses DEFAULTS; client reconciles from localStorage and ?lang= before
+  // paint via the bootstrap script + the provider effect.
+  const initial = typeof document === 'undefined' ? DEFAULTS : resolveClientInitial()
   return (
     <ThemeProvider initial={initial}>
       <Outlet />
