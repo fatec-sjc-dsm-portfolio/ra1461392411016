@@ -143,14 +143,14 @@ export const TRAJECTORY: TrajectoryEntry[] = [
       es: 'ETEC São José dos Campos',
     },
     role: {
-      pt: 'Técnico em Informática',
-      en: 'Technical Diploma in IT',
-      es: 'Técnico en Informática',
+      pt: 'Técnico em Desenvolvimento de Sistemas',
+      en: 'Technical Diploma in Systems Development',
+      es: 'Técnico en Desarrollo de Sistemas',
     },
     description: {
-      pt: 'Formação técnica em informática — onde a **programação** começou.', // TODO(petros)
-      en: 'Technical IT education — where **programming** began.',
-      es: 'Formación técnica en informática — donde empezó la **programación**.',
+      pt: 'Formação técnica em desenvolvimento de sistemas, onde me aprofundei em **programação**.',
+      en: 'Technical education in systems development, where I went deeper into **programming**.',
+      es: 'Formación técnica en desarrollo de sistemas, donde profundicé en **programación**.',
     },
     techs: ['python', 'mysql'],
   },
