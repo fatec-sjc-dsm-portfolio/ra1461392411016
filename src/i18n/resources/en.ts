@@ -35,7 +35,7 @@ const en: UIStrings = {
     description:
       'I build applications ranging from <b>weekend MVPs</b> to systems with <b>enterprise clients</b>. Stack centered on <b>TypeScript</b>, <b>Python</b> and <b>clean architecture</b> — chosen for what it delivers, <i>not for the latest trend</i>.',
     goals:
-      'My academic goal is to <b>complete my degree</b> while applying what I learn to real projects. Professionally, I want to <b>grow as a full stack developer</b>, building products that solve real problems. My areas of interest are <b>web and mobile development</b>, <b>software architecture</b> and <b>applied artificial intelligence</b>.',
+      'My academic goal is to <b>complete my degree</b> while applying what I learn to real projects. Professionally, I want to <b>grow as a full stack developer</b>, building products that solve real problems. My areas of interest are <b>web and mobile development</b>, <b>software architecture</b> and <b>artificial intelligence applied to law, with agents and semantic search</b>.',
     tagFatec: 'FATEC · 6TH SEM',
     tagAka: 'a.k.a. Petros',
     tagYears: '{{years}}+ YEARS DEV',

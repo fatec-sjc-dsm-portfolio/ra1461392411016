@@ -35,7 +35,7 @@ const es: UIStrings = {
     description:
       'Construyo aplicaciones que van desde <b>MVPs de fin de semana</b> hasta sistemas con <b>clientes corporativos</b>. Stack centrado en <b>TypeScript</b>, <b>Python</b> y <b>arquitectura limpia</b> — elegido por lo que entrega, <i>no por la última moda</i>.',
     goals:
-      'Mi objetivo académico es <b>concluir la carrera</b> aplicando lo que aprendo en proyectos reales. Profesionalmente, quiero <b>crecer como desarrollador full stack</b>, creando productos que resuelvan problemas reales. Mis áreas de interés son el <b>desarrollo web y móvil</b>, la <b>arquitectura de software</b> y la <b>inteligencia artificial aplicada</b>.',
+      'Mi objetivo académico es <b>concluir la carrera</b> aplicando lo que aprendo en proyectos reales. Profesionalmente, quiero <b>crecer como desarrollador full stack</b>, creando productos que resuelvan problemas reales. Mis áreas de interés son el <b>desarrollo web y móvil</b>, la <b>arquitectura de software</b> y la <b>inteligencia artificial aplicada al derecho, con agentes y búsqueda semántica</b>.',
     tagFatec: 'FATEC · 6º SEM',
     tagAka: 'a.k.a. Petros',
     tagYears: '{{years}}+ AÑOS DEV',

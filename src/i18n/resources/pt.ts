@@ -34,7 +34,7 @@ const pt = {
     description:
       'Construo aplicações que vão do <b>MVP de fim de semana</b> a sistemas com <b>clientes corporativos</b>. Stack centrado em <b>TypeScript</b>, <b>Python</b> e <b>arquitetura limpa</b> — escolhido pelo que entrega, <i>não pela última moda</i>.',
     goals:
-      'Meu objetivo acadêmico é <b>concluir a graduação</b> aplicando o que aprendo em projetos reais. Profissionalmente, quero <b>crescer como desenvolvedor full stack</b>, criando produtos que resolvam problemas de verdade. Minhas áreas de interesse são <b>desenvolvimento web e mobile</b>, <b>arquitetura de software</b> e <b>inteligência artificial aplicada</b>.',
+      'Meu objetivo acadêmico é <b>concluir a graduação</b> aplicando o que aprendo em projetos reais. Profissionalmente, quero <b>crescer como desenvolvedor full stack</b>, criando produtos que resolvam problemas de verdade. Minhas áreas de interesse são <b>desenvolvimento web e mobile</b>, <b>arquitetura de software</b> e <b>inteligência artificial aplicada ao direito, com agentes e busca semântica</b>.',
     tagFatec: 'FATEC · 6º SEM',
     tagAka: 'a.k.a. Petros',
     tagYears: '{{years}}+ ANOS DEV',

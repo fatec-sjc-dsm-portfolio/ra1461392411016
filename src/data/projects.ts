@@ -154,6 +154,22 @@ export const PROJECTS: Project[] = [
           },
         },
         {
+          icon: 'IconDatabase',
+          label: {
+            pt: 'Modelagem de banco de dados',
+            en: 'Database modeling',
+            es: 'Modelado de bases de datos',
+          },
+        },
+        {
+          icon: 'IconEye',
+          label: {
+            pt: 'Prototipação de telas no Figma',
+            en: 'Screen prototyping in Figma',
+            es: 'Prototipado de pantallas en Figma',
+          },
+        },
+        {
           icon: 'IconCode',
           label: {
             pt: 'Python + Flask',
