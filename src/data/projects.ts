@@ -359,6 +359,14 @@ export const PROJECTS: Project[] = [
           },
         },
         {
+          icon: 'IconDatabase',
+          label: {
+            pt: 'Modelagem de banco de dados',
+            en: 'Database modeling',
+            es: 'Modelado de bases de datos',
+          },
+        },
+        {
           icon: 'IconStack2',
           label: {
             pt: 'Projetos monorepo',
