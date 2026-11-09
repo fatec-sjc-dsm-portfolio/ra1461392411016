@@ -18,9 +18,9 @@ export const ACTIVITY_COLOR: Record<ActivityKind, string> = {
   offline: '#555',
 }
 
-// TODO(petros): replace with the real Discord user id (public — client fetch).
+// Public id (also in the Discord link in channels.ts), fetched from the browser.
 const DISCORD_ID =
-  (import.meta.env?.VITE_DISCORD_ID as string | undefined) || '000000000000000000'
+  (import.meta.env?.VITE_DISCORD_ID as string | undefined) || '905944456472195123'
 const POLL_MS = 30_000
 const CODE_RE = /visual studio code|vscode|cursor|^code$/i
 
