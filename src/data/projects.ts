@@ -1105,7 +1105,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'pulo-do-gato-news',
     kind: 'professional',
-    order: 2,
+    order: 3,
     eyebrow: { pt: '2024 · Blog SEO', en: '2024 · SEO Blog', es: '2024 · Blog SEO' },
     title: 'Pulo do Gato News',
     tagline: {
@@ -1623,7 +1623,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'scoops',
     kind: 'professional',
-    order: 3,
+    order: 2,
     eyebrow: {
       pt: '2026 · SaaS · Projeto pessoal',
       en: '2026 · SaaS · Personal project',
