@@ -182,7 +182,7 @@ export function Contact() {
             <div className='mt-6 flex flex-wrap items-center justify-between gap-3'>
               <button
                 type='submit'
-                className='group inline-flex min-h-11 items-center gap-2 rounded-md bg-accent px-5 font-sans text-body font-medium text-[#0a0a0a] transition-all duration-[var(--dur-micro)] hover:gap-3 hover:brightness-110 disabled:opacity-60'
+                className='group inline-flex min-h-11 items-center gap-2 rounded-md bg-accent px-5 font-sans text-body font-medium text-on-accent transition-all duration-[var(--dur-micro)] hover:gap-3 hover:brightness-110 disabled:opacity-60'
               >
                 {t('contact.submit')}
                 <IconArrowRight

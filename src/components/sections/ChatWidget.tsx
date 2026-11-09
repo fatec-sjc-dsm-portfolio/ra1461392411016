@@ -41,7 +41,7 @@ function Message({ entry, thinking }: { entry: ChatEntry; thinking: boolean }) {
       <div
         className={cn(
           'flex max-w-[90%] flex-col gap-[0.5rem] whitespace-pre-wrap break-words rounded-md px-3 py-2 font-sans text-body-sm leading-body',
-          isUser ? 'bg-accent text-[#0a0a0a]' : 'bg-bg-elevated text-text-primary',
+          isUser ? 'bg-accent text-on-accent' : 'bg-bg-elevated text-text-primary',
         )}
       >
         {lines.length > 0
@@ -212,7 +212,7 @@ export function ChatWidget() {
                     type='submit'
                     aria-label={t('chat.send')}
                     disabled={!draft.trim()}
-                    className='flex size-[2.25rem] shrink-0 items-center justify-center rounded-sm bg-accent text-[#0a0a0a] disabled:opacity-40'
+                    className='flex size-[2.25rem] shrink-0 items-center justify-center rounded-sm bg-accent text-on-accent disabled:opacity-40'
                   >
                     <IconArrowUp size={18} stroke={1.75} aria-hidden />
                   </button>

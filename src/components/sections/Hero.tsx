@@ -92,7 +92,7 @@ export function Hero({
                   <a
                     href={cvHref(lang)}
                     download={cvFilename(lang)}
-                    className='inline-flex min-h-11 items-center justify-center gap-2 rounded-sm bg-accent px-5 font-sans text-body font-medium text-[#0a0a0a] transition-all duration-[var(--dur-micro)] hover:brightness-110 max-sm:w-full'
+                    className='inline-flex min-h-11 items-center justify-center gap-2 rounded-sm bg-accent px-5 font-sans text-body font-medium text-on-accent transition-all duration-[var(--dur-micro)] hover:brightness-110 max-sm:w-full'
                   >
                     <IconDownload className='size-4' stroke={1.75} aria-hidden />
                     {t('hero.downloadCv')}
@@ -102,7 +102,7 @@ export function Hero({
                 <a
                   href={cvHref(lang)}
                   download={cvFilename(lang)}
-                  className='inline-flex min-h-11 items-center justify-center gap-2 rounded-sm bg-accent px-5 font-sans text-body font-medium text-[#0a0a0a] transition-all duration-[var(--dur-micro)] hover:brightness-110 max-sm:w-full'
+                  className='inline-flex min-h-11 items-center justify-center gap-2 rounded-sm bg-accent px-5 font-sans text-body font-medium text-on-accent transition-all duration-[var(--dur-micro)] hover:brightness-110 max-sm:w-full'
                 >
                   <IconDownload className='size-4' stroke={1.75} aria-hidden />
                   {t('hero.downloadCv')}
