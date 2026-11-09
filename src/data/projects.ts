@@ -1455,6 +1455,172 @@ export const PROJECTS: Project[] = [
       ],
     },
   },
+  {
+    id: 'vehoway',
+    kind: 'professional',
+    order: 4,
+    eyebrow: {
+      pt: '2026 · Site institucional',
+      en: '2026 · Corporate website',
+      es: '2026 · Sitio institucional',
+    },
+    title: 'Vehoway',
+    tagline: {
+      pt: 'Site da distribuidora de autopeças Vehoway, com catálogo pesquisável de peças, PDFs para download e contato comercial por WhatsApp.',
+      en: 'Website for the Vehoway auto parts distributor, with a searchable parts catalog, downloadable PDFs and sales contact over WhatsApp.',
+      es: 'Sitio de la distribuidora de autopartes Vehoway, con catálogo de piezas con búsqueda, PDFs para descargar y contacto comercial por WhatsApp.',
+    },
+    layout: 'web',
+    cover: '/images/projects/vehoway/home-page.png',
+    gallery: [
+      '/images/projects/vehoway/home-page.png',
+      '/images/projects/vehoway/categories-and-catalogs.png',
+      '/images/projects/vehoway/products-page.png',
+    ],
+    techs: ['astro', 'react', 'typescript', 'tailwind', 'sanity'],
+    links: {
+      code: 'https://github.com/rafinel/vehoway',
+      live: 'https://vehoway-business.netlify.app/',
+    },
+    detail: {
+      about: {
+        pt: 'A **Vehoway**, distribuidora de autopeças para caminhões e implementos rodoviários, dependia de um site de 2023 simples demais para sustentar sua estratégia de marketing: o cliente não conseguia consultar peças por nome ou código, os catálogos não tinham organização e o conteúdo precisava crescer sem retrabalho a cada nova linha. O novo site reúne os produtos em categorias, permite localizar cada peça e leva o cliente direto ao time comercial pelo **WhatsApp**.',
+        en: '**Vehoway**, an auto parts distributor for trucks and road implements, relied on a 2023 website too simple to support its marketing strategy: customers could not look up parts by name or code, catalogs were not organized and content had to grow without rework for each new product line. The new website groups products into categories, makes every part easy to find and takes customers straight to the sales team over **WhatsApp**.',
+        es: '**Vehoway**, distribuidora de autopartes para camiones e implementos de carretera, dependía de un sitio de 2023 demasiado simple para sostener su estrategia de marketing: el cliente no podía consultar piezas por nombre o código, los catálogos no estaban organizados y el contenido debía crecer sin retrabajo con cada nueva línea. El nuevo sitio agrupa los productos en categorías, permite localizar cada pieza y lleva al cliente directo al equipo comercial por **WhatsApp**.',
+      },
+      features: [
+        {
+          pt: '**Busca de peças** por nome, código ou tags, com filtros por categoria, aplicação e catálogo, paginação e estado preservado na URL.',
+          en: '**Parts search** by name, code or tags, with filters by category, application and catalog, pagination and state kept in the URL.',
+          es: '**Búsqueda de piezas** por nombre, código o tags, con filtros por categoría, aplicación y catálogo, paginación y estado preservado en la URL.',
+        },
+        {
+          pt: '**Painel de detalhes da peça** com código, imagem, descrição, categorias e acesso direto ao PDF do catálogo.',
+          en: '**Part detail panel** with code, image, description, categories and direct access to the catalog PDF.',
+          es: '**Panel de detalles de la pieza** con código, imagen, descripción, categorías y acceso directo al PDF del catálogo.',
+        },
+        {
+          pt: '**Download de catálogos** em PDF, individualmente ou todos juntos em um arquivo ZIP gerado no navegador.',
+          en: '**PDF catalog downloads**, one at a time or all together in a ZIP file generated in the browser.',
+          es: '**Descarga de catálogos** en PDF, individualmente o todos juntos en un archivo ZIP generado en el navegador.',
+        },
+        {
+          pt: '**Contato pelo WhatsApp** com mensagem pré-preenchida com a peça que o cliente está consultando.',
+          en: '**WhatsApp contact** with a message prefilled with the part the customer is viewing.',
+          es: '**Contacto por WhatsApp** con mensaje prellenado con la pieza que el cliente está consultando.',
+        },
+        {
+          pt: '**Gestão de conteúdo no Sanity** para produtos, categorias, aplicações e catálogos.',
+          en: '**Content management in Sanity** for products, categories, applications and catalogs.',
+          es: '**Gestión de contenido en Sanity** para productos, categorías, aplicaciones y catálogos.',
+        },
+      ],
+      techGroups: [
+        {
+          label: { pt: 'Frontend', en: 'Frontend', es: 'Frontend' },
+          techs: ['astro', 'react', 'typescript', 'tailwind'],
+        },
+        {
+          label: { pt: 'CMS', en: 'CMS', es: 'CMS' },
+          techs: ['sanity'],
+        },
+      ],
+      contributions: [
+        {
+          pt: 'Desenvolvi todo o **frontend em Astro com ilhas React**, da home à página de produtos, a partir do design criado em colaboração no Pencil.',
+          en: 'Built the entire **Astro frontend with React islands**, from the home page to the products page, based on a design created collaboratively in Pencil.',
+          es: 'Desarrollé todo el **frontend en Astro con islas React**, de la home a la página de productos, a partir del diseño creado en colaboración en Pencil.',
+        },
+        {
+          pt: 'Modelei os **schemas e consultas GROQ do Sanity**, mantendo o CMS isolado atrás de interfaces e DTOs.',
+          en: 'Modeled the **Sanity schemas and GROQ queries**, keeping the CMS isolated behind interfaces and DTOs.',
+          es: 'Modelé los **schemas y consultas GROQ de Sanity**, manteniendo el CMS aislado detrás de interfaces y DTOs.',
+        },
+        {
+          pt: 'Migrei o site de **SSR na Netlify para build estático**, movendo a geração do ZIP de catálogos do servidor para o navegador.',
+          en: 'Migrated the site from **SSR on Netlify to a static build**, moving catalog ZIP generation from the server to the browser.',
+          es: 'Migré el sitio de **SSR en Netlify a build estático**, moviendo la generación del ZIP de catálogos del servidor al navegador.',
+        },
+        {
+          pt: 'Automatizei o **deploy com GitHub Actions** para a hospedagem da Locaweb e tratei diretamente com o cliente durante o projeto.',
+          en: 'Automated **deployment with GitHub Actions** to Locaweb hosting and worked directly with the client throughout the project.',
+          es: 'Automaticé el **deploy con GitHub Actions** hacia el hosting de Locaweb y traté directamente con el cliente durante el proyecto.',
+        },
+      ],
+      lessons: [
+        {
+          pt: 'Um site vitrine não precisa de servidor em tempo de execução: o build estático simplificou o deploy e viabilizou a hospedagem compartilhada.',
+          en: 'A showcase website does not need a server at runtime: the static build simplified deployment and made shared hosting viable.',
+          es: 'Un sitio vitrina no necesita servidor en tiempo de ejecución: el build estático simplificó el deploy y viabilizó el hosting compartido.',
+        },
+        {
+          pt: 'Build estático tem um custo: o conteúdo publicado no CMS só chega ao site na build seguinte.',
+          en: 'A static build has a cost: content published in the CMS only reaches the site on the next build.',
+          es: 'El build estático tiene un costo: el contenido publicado en el CMS solo llega al sitio en el siguiente build.',
+        },
+      ],
+      hardSkills: [
+        {
+          icon: 'IconCode',
+          label: {
+            pt: 'Arquitetura de ilhas com Astro e React',
+            en: 'Islands architecture with Astro and React',
+            es: 'Arquitectura de islas con Astro y React',
+          },
+        },
+        {
+          icon: 'IconDatabase',
+          label: {
+            pt: 'Modelagem de conteúdo com Sanity e GROQ',
+            en: 'Content modeling with Sanity and GROQ',
+            es: 'Modelado de contenido con Sanity y GROQ',
+          },
+        },
+        {
+          icon: 'IconBolt',
+          label: {
+            pt: 'Geração estática e filtragem no cliente',
+            en: 'Static generation and client-side filtering',
+            es: 'Generación estática y filtrado en el cliente',
+          },
+        },
+        {
+          icon: 'IconRocket',
+          label: {
+            pt: 'Deploy contínuo com GitHub Actions',
+            en: 'Continuous deployment with GitHub Actions',
+            es: 'Deploy continuo con GitHub Actions',
+          },
+        },
+      ],
+      softSkills: [
+        {
+          icon: 'IconMessageCircle',
+          label: {
+            pt: 'Comunicação direta com cliente',
+            en: 'Direct client communication',
+            es: 'Comunicación directa con el cliente',
+          },
+        },
+        {
+          icon: 'IconUsers',
+          label: {
+            pt: 'Colaboração com design',
+            en: 'Collaboration with design',
+            es: 'Colaboración con diseño',
+          },
+        },
+        {
+          icon: 'IconTarget',
+          label: {
+            pt: 'Priorização de escopo',
+            en: 'Scope prioritization',
+            es: 'Priorización de alcance',
+          },
+        },
+      ],
+    },
+  },
 ]
 
 export function projectsByKind(kind: ProjectKind): Project[] {

@@ -78,7 +78,7 @@ export const TECHS: Tech[] = [
     docsUrl: 'https://vitejs.dev/',
     category: 'frontend',
   },
-  // ── Backend (7) ──
+  // ── Backend (8) ──
   {
     id: 'nodejs',
     name: 'Node.js',
@@ -133,6 +133,14 @@ export const TECHS: Tech[] = [
     brandColor: '#A0A0A0',
     monogram: 'Fk',
     docsUrl: 'https://flask.palletsprojects.com/',
+    category: 'backend',
+  },
+  {
+    id: 'sanity',
+    name: 'Sanity',
+    brandColor: '#F03E2F',
+    monogram: 'Sa',
+    docsUrl: 'https://www.sanity.io/docs',
     category: 'backend',
   },
   // ── Mobile (3) ──

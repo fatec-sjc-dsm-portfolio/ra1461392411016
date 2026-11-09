@@ -2,12 +2,12 @@ import { describe, expect, it } from 'vitest'
 import { CATEGORIES, TECHS, getTech, groupByCategory } from './stack'
 
 describe('TECHS', () => {
-  it('has exactly 32 techs', () => {
-    expect(TECHS).toHaveLength(32)
+  it('has exactly 33 techs', () => {
+    expect(TECHS).toHaveLength(33)
   })
   it('has unique ids', () => {
     const ids = TECHS.map((t) => t.id)
-    expect(new Set(ids).size).toBe(32)
+    expect(new Set(ids).size).toBe(33)
   })
   it('every tech has a category in CATEGORIES', () => {
     for (const t of TECHS) expect(CATEGORIES).toContain(t.category)
@@ -30,7 +30,7 @@ describe('groupByCategory', () => {
   it('groups all techs, preserving CATEGORIES order', () => {
     const groups = groupByCategory(TECHS)
     expect(groups.map((g) => g.category)).toEqual(CATEGORIES)
-    expect(groups.reduce((n, g) => n + g.techs.length, 0)).toBe(32)
+    expect(groups.reduce((n, g) => n + g.techs.length, 0)).toBe(33)
   })
   it('drops empty categories', () => {
     const groups = groupByCategory(TECHS.filter((t) => t.category === 'mobile'))
