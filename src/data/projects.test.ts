@@ -2,15 +2,15 @@ import { describe, expect, it } from 'vitest'
 import { PROJECTS, projectNav, projectsByKind, unknownProjectTechIds } from './projects'
 
 describe('PROJECTS', () => {
-  it('has exactly 10 projects', () => {
-    expect(PROJECTS).toHaveLength(10)
+  it('has exactly 11 projects', () => {
+    expect(PROJECTS).toHaveLength(11)
   })
-  it('has 5 academic and 5 professional', () => {
+  it('has 5 academic and 6 professional', () => {
     expect(PROJECTS.filter((p) => p.kind === 'academic')).toHaveLength(5)
-    expect(PROJECTS.filter((p) => p.kind === 'professional')).toHaveLength(5)
+    expect(PROJECTS.filter((p) => p.kind === 'professional')).toHaveLength(6)
   })
   it('has unique ids', () => {
-    expect(new Set(PROJECTS.map((p) => p.id)).size).toBe(10)
+    expect(new Set(PROJECTS.map((p) => p.id)).size).toBe(11)
   })
   it('order is unique within each kind', () => {
     for (const kind of ['academic', 'professional'] as const) {
