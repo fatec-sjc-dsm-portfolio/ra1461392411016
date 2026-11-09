@@ -891,7 +891,7 @@ export const PROJECTS: Project[] = [
       ],
     },
   },
-  // ── Professional (4) ──
+  // ── Professional (5) ──
   {
     id: 'stardust',
     kind: 'professional',
@@ -1281,7 +1281,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'sertton-mobile',
     kind: 'professional',
-    order: 3,
+    order: 4,
     eyebrow: {
       pt: '2023–2024 · E-commerce mobile',
       en: '2023–2024 · Mobile e-commerce',
@@ -1305,7 +1305,6 @@ export const PROJECTS: Project[] = [
     techs: ['flutter'],
     links: {
       code: 'https://github.com/JohnPetros/sertton',
-      live: 'https://play.google.com/store/apps/details?id=com.joaopcarvalho.sertton',
     },
     detail: {
       about: {
@@ -1458,7 +1457,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'vehoway',
     kind: 'professional',
-    order: 4,
+    order: 5,
     eyebrow: {
       pt: '2026 · Site institucional',
       en: '2026 · Corporate website',
@@ -1616,6 +1615,208 @@ export const PROJECTS: Project[] = [
             pt: 'Priorização de escopo',
             en: 'Scope prioritization',
             es: 'Priorización de alcance',
+          },
+        },
+      ],
+    },
+  },
+  {
+    id: 'scoops',
+    kind: 'professional',
+    order: 3,
+    eyebrow: {
+      pt: '2026 · SaaS · Projeto pessoal',
+      en: '2026 · SaaS · Personal project',
+      es: '2026 · SaaS · Proyecto personal',
+    },
+    title: 'Scoops',
+    tagline: {
+      pt: 'SaaS de gestão para sorveterias e açaiterias, que conecta receitas, estoque, vendas e margem em um só sistema.',
+      en: 'Management SaaS for ice cream and açaí shops, connecting recipes, stock, sales and margin in one system.',
+      es: 'SaaS de gestión para heladerías y açaiterías, que conecta recetas, inventario, ventas y margen en un solo sistema.',
+    },
+    layout: 'web',
+    cover: '/images/projects/scoops/dashboard-page.png',
+    gallery: [
+      '/images/projects/scoops/dashboard-page.png',
+      '/images/projects/scoops/new-sale-page.png',
+      '/images/projects/scoops/recipe-tab.png',
+    ],
+    techs: [
+      'typescript',
+      'react',
+      'nestjs',
+      'postgresql',
+      'tailwind',
+      'supabase',
+      'docker',
+      'vitest',
+    ],
+    links: {
+      code: 'https://github.com/rafinel/scoops',
+      live: 'https://scoops-web-app-staging-5b829e557e7f.herokuapp.com/',
+    },
+    detail: {
+      about: {
+        pt: 'Uma **sorveteria ou açaiteria** tem um estoque difícil de controlar: o mesmo insumo entra em receitas e em copos montados na hora, o preço muda entre balcão e delivery, e um pedido cancelado pode devolver o picolé ao estoque, mas perder o copo já montado. Sem ligar receitas, estoque e vendas, o dono não sabe quanto custa cada produto nem qual é sua margem real. O **Scoops** une esse ciclo em um só sistema, da produção ao balcão.',
+        en: 'An **ice cream or açaí shop** has stock that is hard to control: the same ingredient goes into recipes and into cups assembled on the spot, prices differ between counter and delivery, and a canceled order may return a popsicle to stock but lose a cup already assembled. Without connecting recipes, stock and sales, the owner cannot tell what each product costs or what its real margin is. **Scoops** brings this cycle into one system, from production to the counter.',
+        es: 'Una **heladería o açaitería** tiene un inventario difícil de controlar: el mismo insumo entra en recetas y en vasos armados al momento, el precio cambia entre mostrador y delivery, y un pedido cancelado puede devolver la paleta al inventario, pero perder el vaso ya armado. Sin conectar recetas, inventario y ventas, el dueño no sabe cuánto cuesta cada producto ni cuál es su margen real. **Scoops** une ese ciclo en un solo sistema, de la producción al mostrador.',
+      },
+      features: [
+        {
+          pt: '**Catálogo e estoque** com categorias de ingrediente, fabricável, porção, acompanhamento e revenda, estoque único ou por marca e histórico de movimentações.',
+          en: '**Catalog and stock** with ingredient, manufactured, portion, accompaniment and resale categories, single or per-brand stock and a movement history.',
+          es: '**Catálogo e inventario** con categorías de ingrediente, fabricable, porción, acompañamiento y reventa, inventario único o por marca e historial de movimientos.',
+        },
+        {
+          pt: '**Receitas e produção** com cálculo de CMV, custo unitário e máximo produzível, além de baixa automática dos insumos.',
+          en: '**Recipes and production** with calculated cost of goods sold, unit cost and maximum producible quantity, plus automatic ingredient deduction.',
+          es: '**Recetas y producción** con cálculo de costo de mercadería vendida, costo unitario y máximo producible, además de descuento automático de insumos.',
+        },
+        {
+          pt: '**Ponto de venda** com tamanhos, acompanhamentos, combos e ajuste de preço por canal de venda, como balcão e delivery.',
+          en: '**Point of sale** with sizes, accompaniments, combos and price adjustments per sales channel, such as counter and delivery.',
+          es: '**Punto de venta** con tamaños, acompañamientos, combos y ajuste de precio por canal de venta, como mostrador y delivery.',
+        },
+        {
+          pt: '**Cancelamento por item**, em que cada produto do pedido pode voltar ou não ao estoque, e impressão de pedidos.',
+          en: '**Per-item cancellation**, where each product in an order can return to stock or not, plus order printing.',
+          es: '**Cancelación por ítem**, en la que cada producto del pedido puede volver o no al inventario, e impresión de pedidos.',
+        },
+        {
+          pt: '**Dashboard** com vendas líquidas, ticket médio, margem bruta estimada, produtos mais vendidos e participação dos canais.',
+          en: '**Dashboard** with net sales, average ticket, estimated gross margin, best sellers and sales channel share.',
+          es: '**Dashboard** con ventas netas, ticket promedio, margen bruto estimado, productos más vendidos y participación de los canales.',
+        },
+        {
+          pt: '**Notificações em tempo real** e busca global entre as áreas do sistema.',
+          en: '**Real-time notifications** and global search across the system.',
+          es: '**Notificaciones en tiempo real** y búsqueda global entre las áreas del sistema.',
+        },
+      ],
+      techGroups: [
+        {
+          label: { pt: 'Frontend', en: 'Frontend', es: 'Frontend' },
+          techs: ['react', 'typescript', 'tailwind', 'vite'],
+        },
+        {
+          label: { pt: 'Backend', en: 'Backend', es: 'Backend' },
+          techs: ['nodejs', 'nestjs'],
+        },
+        {
+          label: { pt: 'Banco de dados', en: 'Database', es: 'Base de datos' },
+          techs: ['postgresql', 'supabase'],
+        },
+        {
+          label: {
+            pt: 'Infraestrutura e testes',
+            en: 'Infrastructure and tests',
+            es: 'Infraestructura y pruebas',
+          },
+          techs: ['docker', 'vitest', 'playwright'],
+        },
+      ],
+      contributions: [
+        {
+          pt: 'Desenvolvi sozinho todo o código, da **API em NestJS** ao **frontend em TanStack Start**, em um monorepo Turborepo, a partir de um design criado em colaboração.',
+          en: 'Wrote all of the code myself, from the **NestJS API** to the **TanStack Start frontend**, in a Turborepo monorepo, based on a design created collaboratively.',
+          es: 'Desarrollé solo todo el código, de la **API en NestJS** al **frontend en TanStack Start**, en un monorepo Turborepo, a partir de un diseño creado en colaboración.',
+        },
+        {
+          pt: 'Projetei um **monólito modular multi-tenant**, com domínio independente de framework e fronteiras entre módulos verificadas automaticamente.',
+          en: 'Designed a **multi-tenant modular monolith**, with a framework-independent domain and automatically checked module boundaries.',
+          es: 'Diseñé un **monolito modular multi-tenant**, con dominio independiente de framework y fronteras entre módulos verificadas automáticamente.',
+        },
+        {
+          pt: 'Implementei o processamento assíncrono com **outbox no PostgreSQL e Inngest**, garantindo que eventos só sejam publicados depois de a transação ser confirmada.',
+          en: 'Implemented asynchronous processing with a **PostgreSQL outbox and Inngest**, ensuring events are only published after the transaction commits.',
+          es: 'Implementé el procesamiento asíncrono con **outbox en PostgreSQL e Inngest**, garantizando que los eventos solo se publiquen después de confirmar la transacción.',
+        },
+        {
+          pt: 'Criei a esteira de qualidade e entrega: **testes automatizados, testes de mutação com Stryker**, CI por pacote e deploy em Docker para o Heroku.',
+          en: 'Built the quality and delivery pipeline: **automated tests, Stryker mutation testing**, per-package CI and Docker deployment to Heroku.',
+          es: 'Creé el flujo de calidad y entrega: **pruebas automatizadas, pruebas de mutación con Stryker**, CI por paquete y deploy en Docker hacia Heroku.',
+        },
+        {
+          pt: 'Apresentei a primeira versão a um **dono de sorveteria** e transformei o retorno em funcionalidades, como o cancelamento por item e a impressão de pedidos.',
+          en: 'Demonstrated the first version to an **ice cream shop owner** and turned the feedback into features, such as per-item cancellation and order printing.',
+          es: 'Presenté la primera versión a un **dueño de heladería** y convertí sus comentarios en funcionalidades, como la cancelación por ítem y la impresión de pedidos.',
+        },
+      ],
+      lessons: [
+        {
+          pt: 'Demonstrar o produto a quem vive o problema revelou regras que o design não previa: cancelar um pedido não significa devolver tudo ao estoque.',
+          en: 'Demonstrating the product to someone who lives the problem revealed rules the design had missed: canceling an order does not mean returning everything to stock.',
+          es: 'Demostrar el producto a quien vive el problema reveló reglas que el diseño no preveía: cancelar un pedido no significa devolver todo al inventario.',
+        },
+        {
+          pt: 'Um monólito modular mantém as fronteiras de negócio claras sem o custo operacional de serviços distribuídos.',
+          en: 'A modular monolith keeps business boundaries clear without the operational cost of distributed services.',
+          es: 'Un monolito modular mantiene claras las fronteras de negocio sin el costo operativo de los servicios distribuidos.',
+        },
+        {
+          pt: 'Trabalhar com especificações e agentes de IA só funciona bem com verificações automáticas fortes, que confirmem o que foi entregue.',
+          en: 'Working with specifications and AI agents only goes well with strong automated checks that confirm what was delivered.',
+          es: 'Trabajar con especificaciones y agentes de IA solo funciona bien con verificaciones automáticas sólidas que confirmen lo entregado.',
+        },
+      ],
+      hardSkills: [
+        {
+          icon: 'IconCode',
+          label: {
+            pt: 'Arquitetura de monólito modular',
+            en: 'Modular monolith architecture',
+            es: 'Arquitectura de monolito modular',
+          },
+        },
+        {
+          icon: 'IconDatabase',
+          label: {
+            pt: 'Modelagem multi-tenant em PostgreSQL',
+            en: 'Multi-tenant modeling in PostgreSQL',
+            es: 'Modelado multi-tenant en PostgreSQL',
+          },
+        },
+        {
+          icon: 'IconBolt',
+          label: {
+            pt: 'Eventos assíncronos com outbox',
+            en: 'Asynchronous events with an outbox',
+            es: 'Eventos asíncronos con outbox',
+          },
+        },
+        {
+          icon: 'IconRocket',
+          label: {
+            pt: 'CI/CD e testes de mutação',
+            en: 'CI/CD and mutation testing',
+            es: 'CI/CD y pruebas de mutación',
+          },
+        },
+      ],
+      softSkills: [
+        {
+          icon: 'IconMessageCircle',
+          label: {
+            pt: 'Validação com usuário real',
+            en: 'Validation with a real user',
+            es: 'Validación con usuario real',
+          },
+        },
+        {
+          icon: 'IconUsers',
+          label: {
+            pt: 'Colaboração com design',
+            en: 'Collaboration with design',
+            es: 'Colaboración con diseño',
+          },
+        },
+        {
+          icon: 'IconTarget',
+          label: {
+            pt: 'Autonomia e priorização',
+            en: 'Autonomy and prioritization',
+            es: 'Autonomía y priorización',
           },
         },
       ],

@@ -1,6 +1,7 @@
 import { IconArrowUpRight, IconBrandGithub, IconExternalLink } from '@tabler/icons-react'
 import { Popover } from 'radix-ui'
 import { useTranslation } from 'react-i18next'
+import { RichText, stripRich } from '@/components/common/RichText'
 import { Eyebrow, Tag } from '@/components/primitives'
 import type { Project } from '@/data/projects'
 import { getTech } from '@/data/stack'
@@ -44,7 +45,7 @@ export function ProjectCard({
             <img
               key={currentSrc}
               src={currentSrc}
-              alt={localize(project.tagline)}
+              alt={stripRich(localize(project.tagline))}
               loading='lazy'
               className='relative mx-auto h-full w-auto object-contain motion-safe:animate-[petros-fade_400ms_ease-out]'
             />
@@ -53,7 +54,7 @@ export function ProjectCard({
           <img
             key={currentSrc}
             src={currentSrc}
-            alt={localize(project.tagline)}
+            alt={stripRich(localize(project.tagline))}
             loading='lazy'
             className='size-full object-cover motion-safe:animate-[petros-fade_400ms_ease-out]'
           />
@@ -88,7 +89,7 @@ export function ProjectCard({
         </h3>
 
         <p className='font-sans text-body leading-body text-text-secondary'>
-          {localize(project.tagline)}
+          <RichText>{localize(project.tagline)}</RichText>
         </p>
 
         <div className='flex flex-wrap gap-1.5'>

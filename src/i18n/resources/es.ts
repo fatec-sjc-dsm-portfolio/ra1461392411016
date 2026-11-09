@@ -33,7 +33,7 @@ const es: UIStrings = {
     byline: 'João Pedro Carvalho dos Santos',
     description:
       'Construyo aplicaciones que van desde <b>MVPs de fin de semana</b> hasta sistemas con <b>clientes corporativos</b>. Stack centrado en <b>TypeScript</b>, <b>Python</b> y <b>arquitectura limpia</b> — elegido por lo que entrega, <i>no por la última moda</i>.',
-    tagFatec: 'FATEC · 5º SEM',
+    tagFatec: 'FATEC · 6º SEM',
     tagAka: 'a.k.a. Petros',
     tagYears: '{{years}}+ AÑOS DEV',
     downloadCv: 'Descargar CV',

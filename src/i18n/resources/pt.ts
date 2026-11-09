@@ -31,7 +31,7 @@ const pt = {
     byline: 'João Pedro Carvalho dos Santos',
     description:
       'Construo aplicações que vão do <b>MVP de fim de semana</b> a sistemas com <b>clientes corporativos</b>. Stack centrado em <b>TypeScript</b>, <b>Python</b> e <b>arquitetura limpa</b> — escolhido pelo que entrega, <i>não pela última moda</i>.',
-    tagFatec: 'FATEC · 5º SEM',
+    tagFatec: 'FATEC · 6º SEM',
     tagAka: 'a.k.a. Petros',
     tagYears: '{{years}}+ ANOS DEV',
     downloadCv: 'Baixar CV',

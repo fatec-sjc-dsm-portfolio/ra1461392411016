@@ -67,9 +67,9 @@ export const TRAJECTORY: TrajectoryEntry[] = [
       es: 'FATEC São José dos Campos',
     },
     role: {
-      pt: 'Tecnólogo em Desenvolvimento de Software — 5º semestre',
-      en: 'Software Development Technologist — 5th semester',
-      es: 'Tecnólogo en Desarrollo de Software — 5º semestre',
+      pt: 'Tecnólogo em Desenvolvimento de Software — 6º semestre',
+      en: 'Software Development Technologist — 6th semester',
+      es: 'Tecnólogo en Desarrollo de Software — 6º semestre',
     },
     description: {
       pt: 'Graduação em desenvolvimento de software multiplataforma, com **100% de presença**.', // TODO(petros)
