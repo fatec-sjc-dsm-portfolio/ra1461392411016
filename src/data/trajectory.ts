@@ -28,11 +28,11 @@ export const TRAJECTORY: TrajectoryEntry[] = [
       es: 'Desarrollador Full Stack',
     },
     description: {
-      pt: 'Construindo **plataformas SaaS** para clientes corporativos. Stack **Next.js** + **FastAPI** + **PostgreSQL**, com foco em *DX limpa* e deploy contínuo.',
-      en: 'Building **SaaS platforms** for enterprise clients. Stack: **Next.js** + **FastAPI** + **PostgreSQL**, focused on *clean DX* and continuous deployment.',
-      es: 'Construyendo **plataformas SaaS** para clientes corporativos. Stack **Next.js** + **FastAPI** + **PostgreSQL**, con foco en *DX limpia* y deploy continuo.',
+      pt: 'Desenvolvo de ponta a ponta a **HMS**, plataforma de **gestão jurídica** com **IA assistida** e **assinatura eletrônica**. Stack **React** + **NestJS** + **PostgreSQL**, da *arquitetura* ao deploy contínuo.',
+      en: 'Building **HMS** end to end, a **legal management** platform with **AI assistance** and **e-signatures**. Stack: **React** + **NestJS** + **PostgreSQL**, from *architecture* to continuous deployment.',
+      es: 'Desarrollo de punta a punta **HMS**, plataforma de **gestión jurídica** con **IA asistida** y **firma electrónica**. Stack **React** + **NestJS** + **PostgreSQL**, de la *arquitectura* al deploy continuo.',
     },
-    techs: ['typescript', 'nextjs', 'fastapi', 'postgresql', 'aws'],
+    techs: ['typescript', 'react', 'nestjs', 'postgresql', 'supabase', 'docker'],
   },
   {
     id: 'design-liquido',
