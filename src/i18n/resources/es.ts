@@ -2,6 +2,7 @@ import type { UIStrings } from './pt'
 
 const es: UIStrings = {
   skipToContent: 'Saltar al contenido',
+  backToTop: 'Volver arriba',
   nav: {
     home: 'Inicio',
     about: 'Sobre mí',
@@ -179,6 +180,26 @@ const es: UIStrings = {
     title: '¿A',
     titleAccent: 'construir?',
     subtitle: '(o solo charlar)',
+  },
+  chat: {
+    open: 'Preguntar sobre el portafolio',
+    close: 'Cerrar chat',
+    title: 'Pregunta sobre Petros',
+    unsupported: 'Este chat usa la IA integrada en el navegador, disponible en Google Chrome reciente para computadora. Abre el sitio en Chrome para conversar.',
+    consentBody: 'Este chat usa la IA integrada en Chrome, que se ejecuta en tu computadora. La primera vez Chrome necesita descargar el modelo. Tus preguntas no salen de tu dispositivo.',
+    consentAccept: 'Descargar e iniciar',
+    loading: 'Preparando la IA… {{percent}}%',
+    empty: 'Pregunta sobre proyectos, experiencia, tecnologías o cómo ponerte en contacto.',
+    placeholder: 'Ej.: ¿Qué hizo en StarDust?',
+    send: 'Enviar',
+    stop: 'Detener',
+    thinking: 'Pensando…',
+    stopped: 'Respuesta interrumpida.',
+    noInfo: 'No tengo esa información en el portafolio.',
+    disclaimer: 'IA local, puede equivocarse.',
+    errorLoad: 'No se pudo iniciar la IA de Chrome. Inténtalo de nuevo.',
+    errorGenerate: 'No pude responder ahora. Inténtalo de nuevo.',
+    retry: 'Intentar de nuevo',
   },
 }
 

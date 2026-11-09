@@ -2,6 +2,7 @@ import type { UIStrings } from './pt'
 
 const en: UIStrings = {
   skipToContent: 'Skip to content',
+  backToTop: 'Back to top',
   nav: {
     home: 'Home',
     about: 'About',
@@ -179,6 +180,26 @@ const en: UIStrings = {
     title: 'Let’s',
     titleAccent: 'build?',
     subtitle: '(or just say hi)',
+  },
+  chat: {
+    open: 'Ask about the portfolio',
+    close: 'Close chat',
+    title: 'Ask about Petros',
+    unsupported: 'This chat uses the AI built into the browser, available in recent desktop Google Chrome. Open the site in Chrome to chat.',
+    consentBody: 'This chat uses the AI built into Chrome, which runs on your computer. Chrome needs to download the model the first time. Your questions never leave your device.',
+    consentAccept: 'Download and start',
+    loading: 'Preparing the AI… {{percent}}%',
+    empty: 'Ask about projects, experience, technologies or how to get in touch.',
+    placeholder: 'E.g. What did he do on StarDust?',
+    send: 'Send',
+    stop: 'Stop',
+    thinking: 'Thinking…',
+    stopped: 'Answer stopped.',
+    noInfo: 'I don’t have that information in the portfolio.',
+    disclaimer: 'Local AI, it can make mistakes.',
+    errorLoad: 'Chrome’s AI couldn’t be started. Please try again.',
+    errorGenerate: 'I couldn’t answer right now. Please try again.',
+    retry: 'Try again',
   },
 }
 

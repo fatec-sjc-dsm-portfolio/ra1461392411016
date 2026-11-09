@@ -2,8 +2,10 @@ import { createFileRoute } from '@tanstack/react-router'
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { About } from '@/components/sections/About'
+import { ChatWidget } from '@/components/sections/ChatWidget'
 import { ClosingBanner } from '@/components/sections/ClosingBanner'
 import { Contact } from '@/components/sections/Contact'
+import { ElevatorButton } from '@/components/sections/ElevatorButton'
 import { Footer } from '@/components/sections/Footer'
 import { Header } from '@/components/sections/Header'
 import { Hero } from '@/components/sections/Hero'
@@ -53,6 +55,8 @@ function App() {
         <ClosingBanner />
       </main>
       <Footer />
+      <ElevatorButton />
+      <ChatWidget />
     </>
   )
 }
