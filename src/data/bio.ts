@@ -1,4 +1,6 @@
 import type { L } from '@/i18n/useLocalized'
+import { DAYS_IN_LAST_YEAR, type GithubStats } from '@/lib/githubStats'
+import githubStats from './github-stats.json'
 
 export type Stat = { value: string; suffix: string; label: L; meta: L }
 export type Bio = { paragraphs: L[]; photoCaption: L; stats: Stat[] }
@@ -42,64 +44,77 @@ export const BIO: Bio = {
     en: 'The panda? A *long* story — ask me when we talk.',
     es: '¿El panda? Una *larga* historia — pregúntame cuando hablemos.',
   },
-  stats: [
+  stats: buildStats(githubStats),
+}
+
+function monthYear(date: string): string {
+  const [year, month] = date.split('-')
+  return `${month}/${year}`
+}
+
+export function buildStats(github: GithubStats): Stat[] {
+  const { longestStreak } = github
+  const streakPeriod = `${monthYear(longestStreak.from)} – ${monthYear(longestStreak.to)}`
+  const activeShare = Math.round(
+    (github.activeDaysLastYear / DAYS_IN_LAST_YEAR) * 100,
+  )
+  const lastYearPt = github.contributionsLastYear.toLocaleString('pt-BR')
+  const lastYearEn = github.contributionsLastYear.toLocaleString('en-US')
+
+  return [
     {
-      value: '2,154',
+      value: github.contributions.toLocaleString('en-US'),
       suffix: '',
       label: {
-        pt: 'dias de streak no **Duolingo**',
-        en: 'day streak on **Duolingo**',
-        es: 'días de racha en **Duolingo**',
+        pt: 'contribuições no **GitHub**',
+        en: '**GitHub** contributions',
+        es: 'contribuciones en **GitHub**',
       },
       meta: {
-        pt: 'EN · ES · DESDE 2020',
-        en: 'EN · ES · SINCE 2020',
-        es: 'EN · ES · DESDE 2020',
+        pt: `${lastYearPt} NOS ÚLTIMOS 12 MESES`,
+        en: `${lastYearEn} IN THE LAST 12 MONTHS`,
+        es: `${lastYearPt} EN LOS ÚLTIMOS 12 MESES`,
       },
     },
     {
-      value: '100',
+      value: longestStreak.days.toLocaleString('en-US'),
+      suffix: '',
+      label: {
+        pt: 'dias seguidos contribuindo, minha **maior sequência**',
+        en: 'days in a row contributing, my **longest streak**',
+        es: 'días seguidos contribuyendo, mi **racha más larga**',
+      },
+      meta: { pt: streakPeriod, en: streakPeriod, es: streakPeriod },
+    },
+    {
+      value: String(activeShare),
       suffix: '%',
       label: {
-        pt: 'de presença escolar',
-        en: 'school attendance',
-        es: 'de asistencia escolar',
+        pt: 'dos dias do último ano com **contribuição**',
+        en: 'of the days in the past year with a **contribution**',
+        es: 'de los días del último año con **contribución**',
       },
       meta: {
-        pt: 'DESDE 1º ANO DO EM',
-        en: 'SINCE 1ST YEAR OF HS',
-        es: 'DESDE 1.ER AÑO DE LA SEC.',
+        pt: `${github.activeDaysLastYear} DE ${DAYS_IN_LAST_YEAR} DIAS`,
+        en: `${github.activeDaysLastYear} OF ${DAYS_IN_LAST_YEAR} DAYS`,
+        es: `${github.activeDaysLastYear} DE ${DAYS_IN_LAST_YEAR} DÍAS`,
       },
     },
     {
-      value: '5',
-      suffix: '+',
+      value: github.mergedPullRequests.toLocaleString('en-US'),
+      suffix: '',
       label: {
-        pt: 'anos ouvindo **Lofi** enquanto codo',
-        en: 'years listening to **Lofi** while coding',
-        es: 'años escuchando **Lofi** mientras codo',
+        pt: '**pull requests** públicos mergeados',
+        en: 'public **pull requests** merged',
+        es: '**pull requests** públicos fusionados',
       },
       meta: {
-        pt: 'ROTINA DIÁRIA',
-        en: 'DAILY ROUTINE',
-        es: 'RUTINA DIARIA',
+        pt: `${github.mergedOutsideOwnRepos} FORA DOS MEUS REPOS`,
+        en: `${github.mergedOutsideOwnRepos} OUTSIDE MY OWN REPOS`,
+        es: `${github.mergedOutsideOwnRepos} FUERA DE MIS REPOS`,
       },
     },
-    {
-      value: '3',
-      suffix: '+',
-      label: {
-        pt: 'anos entregando software em produção',
-        en: 'years shipping software to production',
-        es: 'años entregando software en producción',
-      },
-      meta: {
-        pt: 'DESDE 2023',
-        en: 'SINCE 2023',
-        es: 'DESDE 2023',
-      },
-    },
-  ],
+  ]
 }
 
 export function statTarget(stat: Stat): number {

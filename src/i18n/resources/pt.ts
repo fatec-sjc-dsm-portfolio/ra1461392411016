@@ -117,7 +117,7 @@ const pt = {
     photoLabel: 'JP & 🐼',
     photoAlt: 'Petros com amigos do ctrl-alt-del em frente à FATEC',
     statsEyebrow: 'CONSISTÊNCIA',
-    statsMeta: 'EM NÚMEROS',
+    statsMeta: 'DADOS DO GITHUB',
   },
   now: {
     title: 'AGORA',

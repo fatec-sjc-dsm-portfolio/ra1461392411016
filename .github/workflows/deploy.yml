@@ -3,6 +3,8 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  schedule:
+    - cron: '0 6 * * *'
   workflow_dispatch:
 
 permissions:
@@ -29,10 +31,11 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm typecheck
       - run: pnpm test
-      - run: pnpm build
+      # Project sites are served from /<repo>/. Scheduled runs carry no
+      # github.event.repository, so the path comes from the runner's env.
+      - run: BASE_PATH="/${GITHUB_REPOSITORY#*/}/" pnpm build
         env:
-          # Project sites are served from /<repo>/.
-          BASE_PATH: /${{ github.event.repository.name }}/
+          GITHUB_TOKEN: ${{ github.token }}
           VITE_DISCORD_ID: ${{ vars.VITE_DISCORD_ID }}
       # Unknown paths get the app shell, so the router shows its 404 page.
       - run: cp dist/client/index.html dist/client/404.html

@@ -119,7 +119,7 @@ const es: UIStrings = {
     photoLabel: 'JP & 🐼',
     photoAlt: 'Petros con los amigos de ctrl-alt-del frente a FATEC',
     statsEyebrow: 'CONSISTENCIA',
-    statsMeta: 'EN NÚMEROS',
+    statsMeta: 'DATOS DE GITHUB',
   },
   now: {
     title: 'AHORA',
