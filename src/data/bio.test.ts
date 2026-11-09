@@ -2,8 +2,27 @@ import { describe, expect, it } from 'vitest'
 import { BIO, buildStats, statTarget } from './bio'
 
 describe('BIO', () => {
-  it('has exactly 6 bio paragraphs', () => {
-    expect(BIO.paragraphs).toHaveLength(6)
+  it('tells the story in 8 milestones with unique ids', () => {
+    expect(BIO.milestones).toHaveLength(8)
+    expect(new Set(BIO.milestones.map((m) => m.id)).size).toBe(8)
+  })
+  it('every milestone is written in all 3 languages', () => {
+    for (const m of BIO.milestones) {
+      for (const field of [m.title, m.body, m.imageHint]) {
+        expect(field.pt).toBeTruthy()
+        expect(field.en).toBeTruthy()
+        expect(field.es).toBeTruthy()
+      }
+    }
+  })
+  it('labels every montage as an edited image', () => {
+    const montages = BIO.milestones.filter((m) => m.image?.includes('montagem'))
+    expect(montages.length).toBeGreaterThan(0)
+    for (const m of montages) {
+      expect(m.imageNote?.pt).toContain('editada')
+      expect(m.imageNote?.en).toContain('edited')
+      expect(m.imageNote?.es).toContain('editada')
+    }
   })
   it('has exactly 4 stats', () => {
     expect(BIO.stats).toHaveLength(4)

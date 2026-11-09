@@ -124,6 +124,8 @@ const pt = {
     photoAlt: 'Petros com amigos do ctrl-alt-del em frente à FATEC',
     statsEyebrow: 'CONSISTÊNCIA',
     statsMeta: 'DADOS DO GITHUB',
+    skipStory: 'Pular história',
+    storyNav: 'Marcos da história',
   },
   now: {
     title: 'AGORA',

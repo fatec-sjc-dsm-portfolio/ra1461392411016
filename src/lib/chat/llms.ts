@@ -81,7 +81,7 @@ export function buildLlmsTxt(lang: Lang): string {
     '# João Pedro Carvalho dos Santos (Petros)',
     `> ${label('summary')} ${SITE_URL}`,
     `## ${label('about')}`,
-    BIO.paragraphs.map(text).join('\n\n'),
+    BIO.milestones.map((m) => `- ${text(m.title)}: ${text(m.body)}`).join('\n'),
     `## ${label('trajectory')}`,
     TRAJECTORY.map(trajectoryLine).join('\n'),
     `## ${label('stack')}`,

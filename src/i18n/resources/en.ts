@@ -125,6 +125,8 @@ const en: UIStrings = {
     photoAlt: 'Petros with the ctrl-alt-del crew outside FATEC',
     statsEyebrow: 'CONSISTENCY',
     statsMeta: 'GITHUB DATA',
+    skipStory: 'Skip story',
+    storyNav: 'Story milestones',
   },
   now: {
     title: 'NOW',

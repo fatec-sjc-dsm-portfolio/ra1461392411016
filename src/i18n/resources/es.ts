@@ -125,6 +125,8 @@ const es: UIStrings = {
     photoAlt: 'Petros con los amigos de ctrl-alt-del frente a FATEC',
     statsEyebrow: 'CONSISTENCIA',
     statsMeta: 'DATOS DE GITHUB',
+    skipStory: 'Saltar historia',
+    storyNav: 'Hitos de la historia',
   },
   now: {
     title: 'AHORA',
