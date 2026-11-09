@@ -138,6 +138,22 @@ export const PROJECTS: Project[] = [
       ],
       hardSkills: [
         {
+          icon: 'IconTarget',
+          label: {
+            pt: 'Gestão de requisitos e backlog',
+            en: 'Requirements and backlog management',
+            es: 'Gestión de requisitos y backlog',
+          },
+        },
+        {
+          icon: 'IconBolt',
+          label: {
+            pt: 'Integração de software com IoT',
+            en: 'Software and IoT integration',
+            es: 'Integración de software con IoT',
+          },
+        },
+        {
           icon: 'IconCode',
           label: {
             pt: 'Python + Flask',
@@ -311,6 +327,22 @@ export const PROJECTS: Project[] = [
       ],
       hardSkills: [
         {
+          icon: 'IconTarget',
+          label: {
+            pt: 'Negociação e análise de requisitos',
+            en: 'Requirements negotiation and analysis',
+            es: 'Negociación y análisis de requisitos',
+          },
+        },
+        {
+          icon: 'IconStack2',
+          label: {
+            pt: 'Controle de acesso e permissões',
+            en: 'Access control and permissions',
+            es: 'Control de acceso y permisos',
+          },
+        },
+        {
           icon: 'IconStack2',
           label: {
             pt: 'Projetos monorepo',
@@ -483,6 +515,22 @@ export const PROJECTS: Project[] = [
         },
       ],
       hardSkills: [
+        {
+          icon: 'IconDatabase',
+          label: {
+            pt: 'Modelagem de dados relacionais e não relacionais',
+            en: 'Relational and non-relational data modeling',
+            es: 'Modelado de datos relacionales y no relacionales',
+          },
+        },
+        {
+          icon: 'IconTarget',
+          label: {
+            pt: 'Modelagem de regras de negócio',
+            en: 'Business rules modeling',
+            es: 'Modelado de reglas de negocio',
+          },
+        },
         {
           icon: 'IconStack2',
           label: {
@@ -664,6 +712,22 @@ export const PROJECTS: Project[] = [
         },
       ],
       hardSkills: [
+        {
+          icon: 'IconCloud',
+          label: {
+            pt: 'Arquitetura de infraestrutura em nuvem',
+            en: 'Cloud infrastructure architecture',
+            es: 'Arquitectura de infraestructura en la nube',
+          },
+        },
+        {
+          icon: 'IconUsers',
+          label: {
+            pt: 'Gestão ágil com Scrum',
+            en: 'Agile management with Scrum',
+            es: 'Gestión ágil con Scrum',
+          },
+        },
         {
           icon: 'IconBolt',
           label: {
@@ -849,6 +913,22 @@ export const PROJECTS: Project[] = [
         },
       ],
       hardSkills: [
+        {
+          icon: 'IconBrain',
+          label: {
+            pt: 'Processamento de linguagem natural',
+            en: 'Natural language processing',
+            es: 'Procesamiento de lenguaje natural',
+          },
+        },
+        {
+          icon: 'IconBulb',
+          label: {
+            pt: 'Recuperação de informação',
+            en: 'Information retrieval',
+            es: 'Recuperación de información',
+          },
+        },
         {
           icon: 'IconDatabase',
           label: {
