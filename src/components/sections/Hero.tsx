@@ -9,6 +9,10 @@ import { assetUrl } from '@/lib/assetUrl'
 
 const TECH_LINE = ['TS', 'PYTHON', 'REACT', 'NEXT.JS', 'FLUTTER', 'AWS']
 const DEV_START_YEAR = 2023
+const HERO_TEXT_STYLES = {
+  b: <strong className='font-semibold text-text-primary' />,
+  i: <em className='font-serif italic text-accent-italic' />,
+}
 
 export function Hero({
   onSeePanda,
@@ -57,25 +61,28 @@ export function Hero({
         </div>
 
         {/* main block */}
-        <div className='mt-12 grid items-center gap-10 md:grid-cols-[60fr_40fr]'>
+        <div className='mt-12 grid grid-cols-[minmax(0,1fr)] items-center gap-10 md:grid-cols-[60fr_40fr]'>
           <div>
             <h1
               id='home-label'
               className='animate-petros-rise font-sans font-medium leading-tight [animation-delay:120ms]'
             >
-              <Brand size='text-hero' className='tracking-hero' />
+              <Brand
+                size='text-[length:min(23vw,var(--text-hero))]'
+                className='tracking-hero'
+              />
             </h1>
             <p className='mt-4 animate-petros-rise font-serif text-h3 italic text-accent-italic [animation-delay:220ms]'>
               {t('hero.byline')}
             </p>
-            <p className='mt-6 max-w-md animate-petros-rise font-sans text-lead leading-body text-text-secondary [animation-delay:380ms]'>
-              <Trans
-                i18nKey='hero.description'
-                components={{
-                  b: <strong className='font-semibold text-text-primary' />,
-                  i: <em className='font-serif italic text-accent-italic' />,
-                }}
-              />
+            <p className='mt-2 animate-petros-rise font-sans text-body text-text-muted [animation-delay:300ms]'>
+              {t('hero.degree')}
+            </p>
+            <p className='mt-6 max-w-xl animate-petros-rise font-sans text-lead leading-body text-text-secondary [animation-delay:380ms]'>
+              <Trans i18nKey='hero.description' components={HERO_TEXT_STYLES} />
+            </p>
+            <p className='mt-4 max-w-xl animate-petros-rise font-sans text-body leading-body text-text-secondary [animation-delay:420ms]'>
+              <Trans i18nKey='hero.goals' components={HERO_TEXT_STYLES} />
             </p>
             <div className='mt-8 flex flex-wrap gap-3 animate-petros-rise [animation-delay:460ms]'>
               {/* Styled as the primary button — the Phase 1 Button renders a

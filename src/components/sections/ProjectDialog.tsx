@@ -140,6 +140,11 @@ export function ProjectDialog({
               <RichText>{localize(project.detail.about)}</RichText>
             </p>
 
+            <SectionHeading>{t('projects.detailSolution')}</SectionHeading>
+            <p className='mt-3 font-sans text-body leading-body text-text-secondary'>
+              <RichText>{localize(project.detail.solution)}</RichText>
+            </p>
+
             <SectionHeading>{t('projects.detailFeatures')}</SectionHeading>
             <ul className='mt-3 flex flex-col gap-2'>
               {project.detail.features.map((f) => (

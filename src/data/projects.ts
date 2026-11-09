@@ -8,6 +8,7 @@ export type DetailSkill = { icon: string; label: L }
 
 export type ProjectDetail = {
   about: L
+  solution: L
   features: L[]
   techGroups: { label: L; techs: string[] }[]
   contributions: L[]
@@ -61,9 +62,14 @@ export const PROJECTS: Project[] = [
     links: { code: 'https://github.com/CtrI-Alt-Del/smart-farming' },
     detail: {
       about: {
-        pt: 'A **estufa inteligente** da Fatec de São José dos Campos gerava leituras de sensores (temperatura, umidade, pH), mas não havia um lugar único para acompanhá-las: os dados ficavam dispersos, as manutenções dependiam de controle manual e não existiam relatórios para apoiar decisões. O Smart Farming centraliza essas leituras, enviadas automaticamente por uma placa **ESP32**, em dashboards, checklists de manutenção e relatórios.',
-        en: 'The **smart greenhouse** at Fatec São José dos Campos produced sensor readings (temperature, humidity, pH), but there was no single place to follow them: data was scattered, maintenance relied on manual control and there were no reports to support decisions. Smart Farming brings those readings together, sent automatically by an **ESP32** board, into dashboards, maintenance checklists and reports.',
-        es: 'El **invernadero inteligente** de la Fatec São José dos Campos generaba lecturas de sensores (temperatura, humedad, pH), pero no había un lugar único para seguirlas: los datos estaban dispersos, el mantenimiento dependía de control manual y no existían reportes para apoyar decisiones. Smart Farming centraliza esas lecturas, enviadas automáticamente por una placa **ESP32**, en dashboards, checklists de mantenimiento y reportes.',
+        pt: 'A **estufa inteligente** da Fatec de São José dos Campos gerava leituras de sensores (temperatura, umidade, pH), mas não havia um lugar único para acompanhá-las: os dados ficavam dispersos, as manutenções dependiam de controle manual e não existiam relatórios para apoiar decisões.',
+        en: 'The **smart greenhouse** at Fatec São José dos Campos produced sensor readings (temperature, humidity, pH), but there was no single place to follow them: data was scattered, maintenance relied on manual control and there were no reports to support decisions.',
+        es: 'El **invernadero inteligente** de la Fatec São José dos Campos generaba lecturas de sensores (temperatura, humedad, pH), pero no había un lugar único para seguirlas: los datos estaban dispersos, el mantenimiento dependía de control manual y no existían reportes para apoyar decisiones.',
+      },
+      solution: {
+        pt: 'O Smart Farming centraliza essas leituras, enviadas automaticamente por uma placa **ESP32**, em dashboards, checklists de manutenção e relatórios.',
+        en: 'Smart Farming brings those readings together, sent automatically by an **ESP32** board, into dashboards, maintenance checklists and reports.',
+        es: 'Smart Farming centraliza esas lecturas, enviadas automáticamente por una placa **ESP32**, en dashboards, checklists de mantenimiento y reportes.',
       },
       features: [
         {
@@ -225,9 +231,14 @@ export const PROJECTS: Project[] = [
     links: { code: 'https://github.com/CtrI-Alt-Del/stocker' },
     detail: {
       about: {
-        pt: 'Empresas que controlam o **estoque** em planilhas ou anotações perdem a visão do que realmente têm: produtos acabam sem aviso, lotes vencem na prateleira e qualquer funcionário pode alterar dados que não deveria. O Stocker resolve isso com controle de produtos e lotes em tempo real, alertas de estoque baixo e de validade, permissões por usuário, relatórios gerados com IA e um chatbot que tira dúvidas da equipe.',
-        en: 'Companies that track **inventory** in spreadsheets or notes lose sight of what they actually have: products run out without warning, batches expire on the shelf and any employee can change data they should not touch. Stocker solves this with real-time product and batch control, low-stock and expiration alerts, per-user permissions, AI-generated reports and a chatbot that answers the team’s questions.',
-        es: 'Las empresas que controlan el **inventario** en hojas de cálculo o anotaciones pierden la visión de lo que realmente tienen: los productos se agotan sin aviso, los lotes vencen en la estantería y cualquier empleado puede modificar datos que no debería. Stocker lo resuelve con control de productos y lotes en tiempo real, alertas de stock bajo y de vencimiento, permisos por usuario, reportes generados con IA y un chatbot que responde las dudas del equipo.',
+        pt: 'Empresas que controlam o **estoque** em planilhas ou anotações perdem a visão do que realmente têm: produtos acabam sem aviso, lotes vencem na prateleira e qualquer funcionário pode alterar dados que não deveria.',
+        en: 'Companies that track **inventory** in spreadsheets or notes lose sight of what they actually have: products run out without warning, batches expire on the shelf and any employee can change data they should not touch.',
+        es: 'Las empresas que controlan el **inventario** en hojas de cálculo o anotaciones pierden la visión de lo que realmente tienen: los productos se agotan sin aviso, los lotes vencen en la estantería y cualquier empleado puede modificar datos que no debería.',
+      },
+      solution: {
+        pt: 'O Stocker resolve isso com controle de produtos e lotes em tempo real, alertas de estoque baixo e de validade, permissões por usuário, relatórios gerados com IA e um chatbot que tira dúvidas da equipe.',
+        en: 'Stocker solves this with real-time product and batch control, low-stock and expiration alerts, per-user permissions, AI-generated reports and a chatbot that answers the team’s questions.',
+        es: 'Stocker lo resuelve con control de productos y lotes en tiempo real, alertas de stock bajo y de vencimiento, permisos por usuario, reportes generados con IA y un chatbot que responde las dudas del equipo.',
       },
       features: [
         {
@@ -398,9 +409,14 @@ export const PROJECTS: Project[] = [
     links: { code: 'https://github.com/CtrI-Alt-Del/chronos' },
     detail: {
       about: {
-        pt: 'Controlar o **ponto** dos funcionários manualmente ou em sistemas desconectados gera erros no cálculo de horas extras e faltas, pedidos de ausência que se perdem sem aprovação e risco de descumprir a legislação trabalhista. O Chronos registra a jornada eletronicamente, calcula horas extras e faltas de forma automática e organiza as ausências em fluxos de aprovação, mantendo a empresa em conformidade.',
-        en: 'Tracking employee **time and attendance** by hand or in disconnected systems leads to wrong overtime and absence calculations, leave requests that get lost without approval and the risk of breaking labor law. Chronos records the workday electronically, calculates overtime and absences automatically and organizes leave into approval flows, keeping the company compliant.',
-        es: 'Controlar el **fichaje** de los empleados manualmente o en sistemas desconectados genera errores en el cálculo de horas extras y faltas, solicitudes de ausencia que se pierden sin aprobación y riesgo de incumplir la legislación laboral. Chronos registra la jornada electrónicamente, calcula horas extras y faltas de forma automática y organiza las ausencias en flujos de aprobación, manteniendo a la empresa en cumplimiento.',
+        pt: 'Controlar o **ponto** dos funcionários manualmente ou em sistemas desconectados gera erros no cálculo de horas extras e faltas, pedidos de ausência que se perdem sem aprovação e risco de descumprir a legislação trabalhista.',
+        en: 'Tracking employee **time and attendance** by hand or in disconnected systems leads to wrong overtime and absence calculations, leave requests that get lost without approval and the risk of breaking labor law.',
+        es: 'Controlar el **fichaje** de los empleados manualmente o en sistemas desconectados genera errores en el cálculo de horas extras y faltas, solicitudes de ausencia que se pierden sin aprobación y riesgo de incumplir la legislación laboral.',
+      },
+      solution: {
+        pt: 'O Chronos registra a jornada eletronicamente, calcula horas extras e faltas de forma automática e organiza as ausências em fluxos de aprovação, mantendo a empresa em conformidade.',
+        en: 'Chronos records the workday electronically, calculates overtime and absences automatically and organizes leave into approval flows, keeping the company compliant.',
+        es: 'Chronos registra la jornada electrónicamente, calcula horas extras y faltas de forma automática y organiza las ausencias en flujos de aprobación, manteniendo a la empresa en cumplimiento.',
       },
       features: [
         {
@@ -553,11 +569,17 @@ export const PROJECTS: Project[] = [
       '/images/projects/gaia/gaia-portal-page.png',
     ],
     techs: ['nestjs', 'react', 'astro', 'postgresql', 'mongodb', 'terraform', 'aws'],
+    links: { code: 'https://github.com/CtrI-Alt-Del/gaia' },
     detail: {
       about: {
-        pt: 'Estações meteorológicas de **baixo custo** produzem dados valiosos, mas sem uma plataforma para recebê-los as leituras ficam difíceis de acompanhar, falhas nos sensores passam despercebidas e quem não é da área não entende como os dispositivos funcionam. Em parceria com a Tecsus, o Gaia recebe os dados via **protocolo MQTT**, mostra tudo em dashboards em tempo real, dispara alarmes configuráveis e oferece um **portal educacional** com modelos 3D dos dispositivos.',
-        en: '**Low-cost** weather stations produce valuable data, but without a platform to receive it the readings are hard to follow, sensor failures go unnoticed and people outside the field do not understand how the devices work. In partnership with Tecsus, Gaia receives the data via the **MQTT protocol**, shows it in real-time dashboards, fires configurable alarms and offers an **educational portal** with 3D device models.',
-        es: 'Las estaciones meteorológicas de **bajo costo** producen datos valiosos, pero sin una plataforma para recibirlos las lecturas son difíciles de seguir, las fallas de los sensores pasan desapercibidas y quien no es del área no entiende cómo funcionan los dispositivos. En alianza con Tecsus, Gaia recibe los datos vía **protocolo MQTT**, los muestra en dashboards en tiempo real, dispara alarmas configurables y ofrece un **portal educativo** con modelos 3D de los dispositivos.',
+        pt: 'Estações meteorológicas de **baixo custo** produzem dados valiosos, mas sem uma plataforma para recebê-los as leituras ficam difíceis de acompanhar, falhas nos sensores passam despercebidas e quem não é da área não entende como os dispositivos funcionam.',
+        en: '**Low-cost** weather stations produce valuable data, but without a platform to receive it the readings are hard to follow, sensor failures go unnoticed and people outside the field do not understand how the devices work.',
+        es: 'Las estaciones meteorológicas de **bajo costo** producen datos valiosos, pero sin una plataforma para recibirlos las lecturas son difíciles de seguir, las fallas de los sensores pasan desapercibidas y quien no es del área no entiende cómo funcionan los dispositivos.',
+      },
+      solution: {
+        pt: 'Em parceria com a Tecsus, o Gaia recebe os dados via **protocolo MQTT**, mostra tudo em dashboards em tempo real, dispara alarmes configuráveis e oferece um **portal educacional** com modelos 3D dos dispositivos.',
+        en: 'In partnership with Tecsus, Gaia receives the data via the **MQTT protocol**, shows it in real-time dashboards, fires configurable alarms and offers an **educational portal** with 3D device models.',
+        es: 'En alianza con Tecsus, Gaia recibe los datos vía **protocolo MQTT**, los muestra en dashboards en tiempo real, dispara alarmas configurables y ofrece un **portal educativo** con modelos 3D de los dispositivos.',
       },
       features: [
         {
@@ -734,9 +756,14 @@ export const PROJECTS: Project[] = [
     links: { code: 'https://github.com/CtrI-Alt-Del/animus' },
     detail: {
       about: {
-        pt: 'Encontrar **precedentes jurídicos** relevantes exige horas de pesquisa manual em grandes acervos de decisões, o que atrasa juízes de 1ª e 2ª instância na fundamentação e dificulta que advogados avaliem se uma tese é viável. Em parceria com a Xertica, o Animus é um app **mobile em Flutter** que automatiza essa pesquisa com IA generativa e busca semântica vetorial, trazendo os precedentes mais aplicáveis a cada caso.',
-        en: 'Finding relevant **legal precedents** takes hours of manual research through large collections of rulings, which slows first- and second-instance judges in grounding their decisions and makes it hard for lawyers to judge whether a thesis is viable. In partnership with Xertica, Animus is a **Flutter mobile app** that automates this research with generative AI and vector semantic search, surfacing the most applicable precedents for each case.',
-        es: 'Encontrar **precedentes jurídicos** relevantes exige horas de investigación manual en grandes acervos de decisiones, lo que retrasa a jueces de 1.ª y 2.ª instancia en la fundamentación y dificulta que los abogados evalúen si una tesis es viable. En alianza con Xertica, Animus es una app **móvil en Flutter** que automatiza esa investigación con IA generativa y búsqueda semántica vectorial, trayendo los precedentes más aplicables a cada caso.',
+        pt: 'Encontrar **precedentes jurídicos** relevantes exige horas de pesquisa manual em grandes acervos de decisões, o que atrasa juízes de 1ª e 2ª instância na fundamentação e dificulta que advogados avaliem se uma tese é viável.',
+        en: 'Finding relevant **legal precedents** takes hours of manual research through large collections of rulings, which slows first- and second-instance judges in grounding their decisions and makes it hard for lawyers to judge whether a thesis is viable.',
+        es: 'Encontrar **precedentes jurídicos** relevantes exige horas de investigación manual en grandes acervos de decisiones, lo que retrasa a jueces de 1.ª y 2.ª instancia en la fundamentación y dificulta que los abogados evalúen si una tesis es viable.',
+      },
+      solution: {
+        pt: 'Em parceria com a Xertica, o Animus é um app **mobile em Flutter** que automatiza essa pesquisa com IA generativa e busca semântica vetorial, trazendo os precedentes mais aplicáveis a cada caso.',
+        en: 'In partnership with Xertica, Animus is a **Flutter mobile app** that automates this research with generative AI and vector semantic search, surfacing the most applicable precedents for each case.',
+        es: 'En alianza con Xertica, Animus es una app **móvil en Flutter** que automatiza esa investigación con IA generativa y búsqueda semántica vectorial, trayendo los precedentes más aplicables a cada caso.',
       },
       features: [
         {
@@ -915,9 +942,14 @@ export const PROJECTS: Project[] = [
     techs: ['typescript', 'react', 'nestjs', 'postgresql', 'supabase', 'docker'],
     detail: {
       about: {
-        pt: 'Em um escritório de advocacia, cada demanda passa por captação, agendamento, consulta, contratação e execução do caso. Quando essas etapas não estão conectadas, o contexto do cliente se perde no caminho, os dados são digitados de novo e fica difícil saber **quem decidiu o quê**. Desenvolvida na Lumetis, a HMS une toda essa jornada em um fluxo **rastreável**, preservando o histórico de decisões e documentos, com **IA assistida** sempre sob validação humana.',
-        en: 'At a law firm, each matter moves through intake, scheduling, consultation, engagement and case delivery. When those stages are not connected, client context gets lost along the way, data is typed in again and it becomes hard to tell **who decided what**. Built at Lumetis, HMS brings the whole journey into one **traceable** flow, preserving the history of decisions and documents, with **AI assistance** always under human validation.',
-        es: 'En un despacho de abogados, cada asunto pasa por captación, agenda, consulta, contratación y ejecución del caso. Cuando esas etapas no están conectadas, el contexto del cliente se pierde en el camino, los datos se digitan de nuevo y es difícil saber **quién decidió qué**. Desarrollada en Lumetis, HMS une todo ese recorrido en un flujo **trazable**, preservando el historial de decisiones y documentos, con **IA asistida** siempre bajo validación humana.',
+        pt: 'Em um escritório de advocacia, cada demanda passa por captação, agendamento, consulta, contratação e execução do caso. Quando essas etapas não estão conectadas, o contexto do cliente se perde no caminho, os dados são digitados de novo e fica difícil saber **quem decidiu o quê**.',
+        en: 'At a law firm, each matter moves through intake, scheduling, consultation, engagement and case delivery. When those stages are not connected, client context gets lost along the way, data is typed in again and it becomes hard to tell **who decided what**.',
+        es: 'En un despacho de abogados, cada asunto pasa por captación, agenda, consulta, contratación y ejecución del caso. Cuando esas etapas no están conectadas, el contexto del cliente se pierde en el camino, los datos se digitan de nuevo y es difícil saber **quién decidió qué**.',
+      },
+      solution: {
+        pt: 'Desenvolvida na Lumetis, a HMS une toda essa jornada em um fluxo **rastreável**, preservando o histórico de decisões e documentos, com **IA assistida** sempre sob validação humana.',
+        en: 'Built at Lumetis, HMS brings the whole journey into one **traceable** flow, preserving the history of decisions and documents, with **AI assistance** always under human validation.',
+        es: 'Desarrollada en Lumetis, HMS une todo ese recorrido en un flujo **trazable**, preservando el historial de decisiones y documentos, con **IA asistida** siempre bajo validación humana.',
       },
       features: [
         {
@@ -1118,9 +1150,14 @@ export const PROJECTS: Project[] = [
     },
     detail: {
       about: {
-        pt: 'Quem começa a aprender **lógica de programação** costuma desistir cedo: o conteúdo parece abstrato, falta uma sequência clara de estudo e não há motivação para praticar todo dia. Como TCC da ETEC, o StarDust transforma o aprendizado em uma jornada **gamificada** com uma metáfora espacial — planetas (temas) e estrelas (fases) — e usa XP, StarCoins, ofensiva diária e conquistas para manter o estudante engajado.',
-        en: 'Beginners learning **programming logic** often give up early: the content feels abstract, there is no clear study path and nothing keeps them practicing every day. Built as my ETEC thesis, StarDust turns learning into a **gamified** journey with a space metaphor — planets (topics) and stars (levels) — and uses XP, StarCoins, daily streaks and achievements to keep students engaged.',
-        es: 'Quien empieza a aprender **lógica de programación** suele abandonar pronto: el contenido parece abstracto, falta una secuencia clara de estudio y no hay motivación para practicar cada día. Como TCC de la ETEC, StarDust convierte el aprendizaje en un recorrido **gamificado** con una metáfora espacial — planetas (temas) y estrellas (niveles) — y usa XP, StarCoins, racha diaria y logros para mantener al estudiante motivado.',
+        pt: 'Quem começa a aprender **lógica de programação** costuma desistir cedo: o conteúdo parece abstrato, falta uma sequência clara de estudo e não há motivação para praticar todo dia.',
+        en: 'Beginners learning **programming logic** often give up early: the content feels abstract, there is no clear study path and nothing keeps them practicing every day.',
+        es: 'Quien empieza a aprender **lógica de programación** suele abandonar pronto: el contenido parece abstracto, falta una secuencia clara de estudio y no hay motivación para practicar cada día.',
+      },
+      solution: {
+        pt: 'Como TCC da ETEC, o StarDust transforma o aprendizado em uma jornada **gamificada** com uma metáfora espacial — planetas (temas) e estrelas (fases) — e usa XP, StarCoins, ofensiva diária e conquistas para manter o estudante engajado.',
+        en: 'Built as my ETEC thesis, StarDust turns learning into a **gamified** journey with a space metaphor — planets (topics) and stars (levels) — and uses XP, StarCoins, daily streaks and achievements to keep students engaged.',
+        es: 'Como TCC de la ETEC, StarDust convierte el aprendizaje en un recorrido **gamificado** con una metáfora espacial — planetas (temas) y estrellas (niveles) — y usa XP, StarCoins, racha diaria y logros para mantener al estudiante motivado.',
       },
       features: [
         {
@@ -1318,9 +1355,14 @@ export const PROJECTS: Project[] = [
     },
     detail: {
       about: {
-        pt: 'A Pulo do Gato News precisava publicar notícias sobre educação, tecnologia, esporte e cultura pop da região de São Paulo e ser encontrada no Google, mas sites de notícias lentos perdem leitores e posições nas buscas. Como freelancer, construí um site **estático de alta performance** com **Astro**, servido via **CDN**, otimizado para **SEO técnico** e com conteúdo administrado por um CMS headless, para a equipe publicar sem depender de um desenvolvedor.',
-        en: 'Pulo do Gato News needed to publish news about education, technology, sports and pop culture in the São Paulo region and be found on Google, but slow news sites lose readers and search rankings. As a freelancer, I built a **high-performance static site** with **Astro**, delivered through a **CDN**, optimized for **technical SEO** and with content managed in a headless CMS, so the team can publish without depending on a developer.',
-        es: 'Pulo do Gato News necesitaba publicar noticias sobre educación, tecnología, deporte y cultura pop de la región de São Paulo y ser encontrada en Google, pero los sitios de noticias lentos pierden lectores y posiciones en las búsquedas. Como freelancer, construí un sitio **estático de alto rendimiento** con **Astro**, servido vía **CDN**, optimizado para **SEO técnico** y con contenido administrado por un CMS headless, para que el equipo publique sin depender de un desarrollador.',
+        pt: 'A Pulo do Gato News precisava publicar notícias sobre educação, tecnologia, esporte e cultura pop da região de São Paulo e ser encontrada no Google, mas sites de notícias lentos perdem leitores e posições nas buscas.',
+        en: 'Pulo do Gato News needed to publish news about education, technology, sports and pop culture in the São Paulo region and be found on Google, but slow news sites lose readers and search rankings.',
+        es: 'Pulo do Gato News necesitaba publicar noticias sobre educación, tecnología, deporte y cultura pop de la región de São Paulo y ser encontrada en Google, pero los sitios de noticias lentos pierden lectores y posiciones en las búsquedas.',
+      },
+      solution: {
+        pt: 'Como freelancer, construí um site **estático de alta performance** com **Astro**, servido via **CDN**, otimizado para **SEO técnico** e com conteúdo administrado por um CMS headless, para a equipe publicar sem depender de um desenvolvedor.',
+        en: 'As a freelancer, I built a **high-performance static site** with **Astro**, delivered through a **CDN**, optimized for **technical SEO** and with content managed in a headless CMS, so the team can publish without depending on a developer.',
+        es: 'Como freelancer, construí un sitio **estático de alto rendimiento** con **Astro**, servido vía **CDN**, optimizado para **SEO técnico** y con contenido administrado por un CMS headless, para que el equipo publique sin depender de un desarrollador.',
       },
       features: [
         {
@@ -1498,9 +1540,14 @@ export const PROJECTS: Project[] = [
     },
     detail: {
       about: {
-        pt: 'A marca Sertton vendia pela plataforma **Yampi**, mas não tinha um app próprio: no celular, os clientes dependiam do navegador, com uma experiência de compra mais lenta e menos fluida. Desenvolvi em **Flutter** um app de **e-commerce nativo**, publicado na Play Store e integrado à Yampi para produtos, pedidos e pagamentos, com foco em performance e navegação fluida.',
-        en: 'The Sertton brand sold through the **Yampi** platform but had no app of its own: on mobile, customers depended on the browser, with a slower and less fluid shopping experience. I built a **native e-commerce app** in **Flutter**, published on the Play Store and integrated with Yampi for products, orders and payments, focused on performance and smooth navigation.',
-        es: 'La marca Sertton vendía por la plataforma **Yampi**, pero no tenía una app propia: en el celular, los clientes dependían del navegador, con una experiencia de compra más lenta y menos fluida. Desarrollé en **Flutter** una app de **e-commerce nativa**, publicada en Play Store e integrada a Yampi para productos, pedidos y pagos, con foco en rendimiento y navegación fluida.',
+        pt: 'A marca Sertton vendia pela plataforma **Yampi**, mas não tinha um app próprio: no celular, os clientes dependiam do navegador, com uma experiência de compra mais lenta e menos fluida.',
+        en: 'The Sertton brand sold through the **Yampi** platform but had no app of its own: on mobile, customers depended on the browser, with a slower and less fluid shopping experience.',
+        es: 'La marca Sertton vendía por la plataforma **Yampi**, pero no tenía una app propia: en el celular, los clientes dependían del navegador, con una experiencia de compra más lenta y menos fluida.',
+      },
+      solution: {
+        pt: 'Desenvolvi em **Flutter** um app de **e-commerce nativo**, publicado na Play Store e integrado à Yampi para produtos, pedidos e pagamentos, com foco em performance e navegação fluida.',
+        en: 'I built a **native e-commerce app** in **Flutter**, published on the Play Store and integrated with Yampi for products, orders and payments, focused on performance and smooth navigation.',
+        es: 'Desarrollé en **Flutter** una app de **e-commerce nativa**, publicada en Play Store e integrada a Yampi para productos, pedidos y pagos, con foco en rendimiento y navegación fluida.',
       },
       features: [
         {
@@ -1673,9 +1720,14 @@ export const PROJECTS: Project[] = [
     },
     detail: {
       about: {
-        pt: 'A **Vehoway**, distribuidora de autopeças para caminhões e implementos rodoviários, dependia de um site de 2023 simples demais para sustentar sua estratégia de marketing: o cliente não conseguia consultar peças por nome ou código, os catálogos não tinham organização e o conteúdo precisava crescer sem retrabalho a cada nova linha. O novo site reúne os produtos em categorias, permite localizar cada peça e leva o cliente direto ao time comercial pelo **WhatsApp**.',
-        en: '**Vehoway**, an auto parts distributor for trucks and road implements, relied on a 2023 website too simple to support its marketing strategy: customers could not look up parts by name or code, catalogs were not organized and content had to grow without rework for each new product line. The new website groups products into categories, makes every part easy to find and takes customers straight to the sales team over **WhatsApp**.',
-        es: '**Vehoway**, distribuidora de autopartes para camiones e implementos de carretera, dependía de un sitio de 2023 demasiado simple para sostener su estrategia de marketing: el cliente no podía consultar piezas por nombre o código, los catálogos no estaban organizados y el contenido debía crecer sin retrabajo con cada nueva línea. El nuevo sitio agrupa los productos en categorías, permite localizar cada pieza y lleva al cliente directo al equipo comercial por **WhatsApp**.',
+        pt: 'A **Vehoway**, distribuidora de autopeças para caminhões e implementos rodoviários, dependia de um site de 2023 simples demais para sustentar sua estratégia de marketing: o cliente não conseguia consultar peças por nome ou código, os catálogos não tinham organização e o conteúdo precisava crescer sem retrabalho a cada nova linha.',
+        en: '**Vehoway**, an auto parts distributor for trucks and road implements, relied on a 2023 website too simple to support its marketing strategy: customers could not look up parts by name or code, catalogs were not organized and content had to grow without rework for each new product line.',
+        es: '**Vehoway**, distribuidora de autopartes para camiones e implementos de carretera, dependía de un sitio de 2023 demasiado simple para sostener su estrategia de marketing: el cliente no podía consultar piezas por nombre o código, los catálogos no estaban organizados y el contenido debía crecer sin retrabajo con cada nueva línea.',
+      },
+      solution: {
+        pt: 'O novo site reúne os produtos em categorias, permite localizar cada peça e leva o cliente direto ao time comercial pelo **WhatsApp**.',
+        en: 'The new website groups products into categories, makes every part easy to find and takes customers straight to the sales team over **WhatsApp**.',
+        es: 'El nuevo sitio agrupa los productos en categorías, permite localizar cada pieza y lleva al cliente directo al equipo comercial por **WhatsApp**.',
       },
       features: [
         {
@@ -1848,9 +1900,14 @@ export const PROJECTS: Project[] = [
     },
     detail: {
       about: {
-        pt: 'Uma **sorveteria ou açaiteria** tem um estoque difícil de controlar: o mesmo insumo entra em receitas e em copos montados na hora, o preço muda entre balcão e delivery, e um pedido cancelado pode devolver o picolé ao estoque, mas perder o copo já montado. Sem ligar receitas, estoque e vendas, o dono não sabe quanto custa cada produto nem qual é sua margem real. O **Scoops** une esse ciclo em um só sistema, da produção ao balcão.',
-        en: 'An **ice cream or açaí shop** has stock that is hard to control: the same ingredient goes into recipes and into cups assembled on the spot, prices differ between counter and delivery, and a canceled order may return a popsicle to stock but lose a cup already assembled. Without connecting recipes, stock and sales, the owner cannot tell what each product costs or what its real margin is. **Scoops** brings this cycle into one system, from production to the counter.',
-        es: 'Una **heladería o açaitería** tiene un inventario difícil de controlar: el mismo insumo entra en recetas y en vasos armados al momento, el precio cambia entre mostrador y delivery, y un pedido cancelado puede devolver la paleta al inventario, pero perder el vaso ya armado. Sin conectar recetas, inventario y ventas, el dueño no sabe cuánto cuesta cada producto ni cuál es su margen real. **Scoops** une ese ciclo en un solo sistema, de la producción al mostrador.',
+        pt: 'Uma **sorveteria ou açaiteria** tem um estoque difícil de controlar: o mesmo insumo entra em receitas e em copos montados na hora, o preço muda entre balcão e delivery, e um pedido cancelado pode devolver o picolé ao estoque, mas perder o copo já montado. Sem ligar receitas, estoque e vendas, o dono não sabe quanto custa cada produto nem qual é sua margem real.',
+        en: 'An **ice cream or açaí shop** has stock that is hard to control: the same ingredient goes into recipes and into cups assembled on the spot, prices differ between counter and delivery, and a canceled order may return a popsicle to stock but lose a cup already assembled. Without connecting recipes, stock and sales, the owner cannot tell what each product costs or what its real margin is.',
+        es: 'Una **heladería o açaitería** tiene un inventario difícil de controlar: el mismo insumo entra en recetas y en vasos armados al momento, el precio cambia entre mostrador y delivery, y un pedido cancelado puede devolver la paleta al inventario, pero perder el vaso ya armado. Sin conectar recetas, inventario y ventas, el dueño no sabe cuánto cuesta cada producto ni cuál es su margen real.',
+      },
+      solution: {
+        pt: 'O **Scoops** une esse ciclo em um só sistema, da produção ao balcão.',
+        en: '**Scoops** brings this cycle into one system, from production to the counter.',
+        es: '**Scoops** une ese ciclo en un solo sistema, de la producción al mostrador.',
       },
       features: [
         {

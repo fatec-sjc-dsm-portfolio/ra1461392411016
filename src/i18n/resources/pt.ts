@@ -28,8 +28,12 @@ const pt = {
     statusPill: 'DESENVOLVEDOR FULL STACK',
     location: 'SÃO JOSÉ DOS CAMPOS · SP — BR',
     byline: 'João Pedro Carvalho dos Santos',
+    degree:
+      'Cursando Desenvolvimento de Software Multiplataforma · FATEC São José dos Campos',
     description:
       'Construo aplicações que vão do <b>MVP de fim de semana</b> a sistemas com <b>clientes corporativos</b>. Stack centrado em <b>TypeScript</b>, <b>Python</b> e <b>arquitetura limpa</b> — escolhido pelo que entrega, <i>não pela última moda</i>.',
+    goals:
+      'Meu objetivo acadêmico é <b>concluir a graduação</b> aplicando o que aprendo em projetos reais. Profissionalmente, quero <b>crescer como desenvolvedor full stack</b>, criando produtos que resolvam problemas de verdade. Minhas áreas de interesse são <b>desenvolvimento web e mobile</b>, <b>arquitetura de software</b> e <b>inteligência artificial aplicada</b>.',
     tagFatec: 'FATEC · 6º SEM',
     tagAka: 'a.k.a. Petros',
     tagYears: '{{years}}+ ANOS DEV',
@@ -94,6 +98,7 @@ const pt = {
     prev: 'Anterior',
     next: 'Próximo',
     detailAbout: 'PROBLEMA',
+    detailSolution: 'SOLUÇÃO',
     detailFeatures: 'FUNCIONALIDADES',
     detailTech: 'TECNOLOGIAS',
     detailContributions: 'CONTRIBUIÇÕES',

@@ -24,6 +24,19 @@ describe('PROJECTS', () => {
       expect(p.gallery.length).toBeGreaterThan(0)
     }
   })
+  it('every API project links to its repository', () => {
+    for (const p of PROJECTS.filter((project) => project.kind === 'academic')) {
+      expect(p.links?.code).toMatch(/^https:\/\/github\.com\//)
+    }
+  })
+  it('describes the problem and the solution separately', () => {
+    for (const p of PROJECTS) {
+      for (const lang of ['pt', 'en', 'es'] as const) {
+        expect(p.detail.solution[lang].length).toBeGreaterThan(0)
+        expect(p.detail.about[lang]).not.toContain(p.detail.solution[lang])
+      }
+    }
+  })
 })
 
 describe('projectsByKind', () => {

@@ -30,8 +30,11 @@ const en: UIStrings = {
     statusPill: 'FULL STACK DEVELOPER',
     location: 'SÃO JOSÉ DOS CAMPOS · SP — BR',
     byline: 'João Pedro Carvalho dos Santos',
+    degree: 'Studying Multiplatform Software Development · FATEC São José dos Campos',
     description:
       'I build applications ranging from <b>weekend MVPs</b> to systems with <b>enterprise clients</b>. Stack centered on <b>TypeScript</b>, <b>Python</b> and <b>clean architecture</b> — chosen for what it delivers, <i>not for the latest trend</i>.',
+    goals:
+      'My academic goal is to <b>complete my degree</b> while applying what I learn to real projects. Professionally, I want to <b>grow as a full stack developer</b>, building products that solve real problems. My areas of interest are <b>web and mobile development</b>, <b>software architecture</b> and <b>applied artificial intelligence</b>.',
     tagFatec: 'FATEC · 6TH SEM',
     tagAka: 'a.k.a. Petros',
     tagYears: '{{years}}+ YEARS DEV',
@@ -96,6 +99,7 @@ const en: UIStrings = {
     prev: 'Previous',
     next: 'Next',
     detailAbout: 'PROBLEM',
+    detailSolution: 'SOLUTION',
     detailFeatures: 'FEATURES',
     detailTech: 'TECHNOLOGIES',
     detailContributions: 'CONTRIBUTIONS',
