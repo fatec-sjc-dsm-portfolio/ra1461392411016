@@ -182,26 +182,6 @@ const pt = {
     titleAccent: 'construir?',
     subtitle: '(ou só puxar um papo)',
   },
-  chat: {
-    open: 'Perguntar sobre o portfólio',
-    close: 'Fechar chat',
-    title: 'Pergunte sobre o Petros',
-    unsupported: 'Este chat usa a IA integrada ao navegador, disponível no Google Chrome recente para computador. Abra o site no Chrome para conversar.',
-    consentBody: 'Este chat usa a IA integrada ao Chrome, que roda no seu computador. Na primeira vez o Chrome precisa baixar o modelo. Suas perguntas não saem do seu dispositivo.',
-    consentAccept: 'Baixar e iniciar',
-    loading: 'Preparando a IA… {{percent}}%',
-    empty: 'Pergunte sobre projetos, experiência, tecnologias ou como entrar em contato.',
-    placeholder: 'Ex.: O que ele fez no StarDust?',
-    send: 'Enviar',
-    stop: 'Parar',
-    thinking: 'Pensando…',
-    stopped: 'Resposta interrompida.',
-    noInfo: 'Não tenho essa informação no portfólio.',
-    disclaimer: 'IA local, pode errar.',
-    errorLoad: 'Não foi possível iniciar a IA do Chrome. Tente novamente.',
-    errorGenerate: 'Não consegui responder agora. Tente novamente.',
-    retry: 'Tentar novamente',
-  },
 }
 
 export type UIStrings = typeof pt
